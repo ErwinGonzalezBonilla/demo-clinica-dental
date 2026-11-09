@@ -3,343 +3,389 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>[hidden]{display:none!important}body{margin:0}</style>
-<title>DentistaExample Clínica Dental</title>
+<title>DentistaExample · Clínica dental en Moratalaz y Vallecas (Madrid)</title>
+<meta name="description" content="Clínica dental en Moratalaz y Vallecas. Primera consulta gratis, implante + corona por 990 €, financiación sin intereses y cita por WhatsApp en un minuto.">
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap">
+<meta name="theme-color" content="#FBFAF7">
+<link rel="canonical" href="https://www.dentistaexample.es/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="DentistaExample Clínica Dental">
+<meta property="og:title" content="DentistaExample · Clínica dental en Moratalaz y Vallecas">
+<meta property="og:description" content="Primera consulta gratis, precios publicados y cita por WhatsApp en un minuto. Dos clínicas a 5 minutos del metro.">
+<meta property="og:url" content="https://www.dentistaexample.es/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230F6E64'/%3E%3Cpath transform='translate(4 4) scale(.667)' d='M7.5 3.5c-2.5 0-4 2-4 4.6 0 2.2.9 3.6 1.6 5.6.6 1.8.8 6.8 2.6 6.8 1.6 0 1.4-4.4 2.3-5.6.5-.7 1.5-.7 2 0 .9 1.2.7 5.6 2.3 5.6 1.8 0 2-5 2.6-6.8.7-2 1.6-3.4 1.6-5.6 0-2.6-1.5-4.6-4-4.6-1.8 0-2.6 1-4.5 1s-2.7-1-4.5-1z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<script>document.documentElement.classList.add('js')</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "@id": "https://www.dentistaexample.es/#moratalaz",
+      "name": "DentistaExample Moratalaz",
+      "url": "https://www.dentistaexample.es/",
+      "telephone": "+34 910 000 100",
+      "email": "hola@dentistaexample.es",
+      "priceRange": "€€",
+      "image": "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&h=630&q=70",
+      "address": { "@type": "PostalAddress", "streetAddress": "C/ del Pinar de Moratalaz, 23", "postalCode": "28030", "addressLocality": "Madrid", "addressCountry": "ES" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "14:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:00", "closes": "21:00" }
+      ]
+    },
+    {
+      "@type": "Dentist",
+      "@id": "https://www.dentistaexample.es/#vallecas",
+      "name": "DentistaExample Vallecas",
+      "url": "https://www.dentistaexample.es/",
+      "telephone": "+34 910 000 100",
+      "email": "hola@dentistaexample.es",
+      "priceRange": "€€",
+      "image": "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=1200&h=630&q=70",
+      "address": { "@type": "PostalAddress", "streetAddress": "Av. del Parque Sur, 41", "postalCode": "28031", "addressLocality": "Madrid", "addressCountry": "ES" },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "14:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:00", "closes": "21:00" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿La primera consulta es gratis?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Incluye revisión, diagnóstico digital y un presupuesto cerrado por escrito, sin compromiso de empezar el tratamiento." } },
+        { "@type": "Question", "name": "¿Cuánto cuesta un implante dental?", "acceptedAnswer": { "@type": "Answer", "text": "El implante con corona de zirconio cuesta 990 € en total, o desde 25 € al mes en 24 meses sin intereses. El precio que aceptas es el que pagas." } },
+        { "@type": "Question", "name": "¿Puedo pedir o cambiar la cita por WhatsApp?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nuestro asistente ve la agenda de las dos clínicas, te ofrece los primeros huecos libres y te envía un recordatorio el día anterior. Funciona las 24 horas." } },
+        { "@type": "Question", "name": "¿Atendéis urgencias?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Si tienes dolor, un diente roto o una infección, te atendemos el mismo día en horario de clínica. Llámanos al 910 000 100." } },
+        { "@type": "Question", "name": "¿Puedo financiar el tratamiento?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, hasta 24 meses sin intereses en tratamientos a partir de 300 €, sujeto a la aprobación de la entidad financiera." } },
+        { "@type": "Question", "name": "¿Duele ponerse un implante?", "acceptedAnswer": { "@type": "Answer", "text": "Se coloca con anestesia local en una sesión de unos 45 minutos. Las molestias de los días siguientes suelen controlarse con analgésicos habituales." } }
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
-/* Layout: web comercial de clínica — barra superior marino, cabecera con menú de tratamientos, hero marino con precios, categorías, tratamiento destacado con ficha lateral, historias, buscador de clínica, contacto, pie marino. Look claro único y deliberado. */
+/* ============ Tokens ============ */
 :root{
   color-scheme:light;
-  --navy:#172634; --navy-2:#20344A; --navy-ink:#E9F1F5; --navy-muted:#A9BBC8;
-  --green:#13A47E; --green-d:#0E8A69; --mint:#E4F5EF; --mint-2:#CDEDE2;
-  --bg:#FFFFFF; --soft:#F5F8F7; --ink:#14212B; --muted:#5F6E77; --line:#E2E8EB;
-  --gold:#F4B740;
-  --c-impl:#E58A2E; --c-prot:#13A47E; --c-orto:#2B8FD6; --c-est:#E0485F; --c-gen:#7C4DDB;
-  --chat:#EDE7DD; --in:#FFFFFF; --out:#D8F7CF; --wa:#1FA855;
-  --f-display:"Urbanist","Avenir Next","Segoe UI",system-ui,sans-serif;
-  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#FBFAF7; --surface:#FFFFFF; --sand:#F2EBE1; --mint:#E3F1EC; --mint-2:#CFE6DE;
+  --ink:#13232E; --ink-2:#2B3B45; --muted:#5B6B73; --line:#E6E2DA;
+  --teal:#0F6E64; --teal-d:#0B5850; --teal-l:#7CCBBB;
+  --gold:#C9973F; --night:#0F1D26;
+  --wa:#1FA855; --chat:#EDE7DD; --in:#FFFFFF; --out:#D8F7CF;
+  --f-serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-sans:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r-lg:22px; --r-md:14px;
+  --sh-sm:0 1px 2px rgba(19,35,46,.05),0 8px 24px -14px rgba(19,35,46,.18);
+  --sh-lg:0 40px 80px -36px rgba(19,35,46,.45);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:max(16px,env(safe-area-inset-left,0px));
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55}
-.in{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-h1,h2,h3,h4{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.01em}
-p{margin:0}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16.5px/1.6 var(--f-sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit;text-decoration:none}
-button{font:inherit}
-:focus-visible{outline:2.5px solid var(--green);outline-offset:3px}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2{font-family:var(--f-serif);font-weight:400;letter-spacing:-.02em;text-wrap:balance}
+h2{font-size:clamp(2rem,1.45rem + 2.1vw,3.05rem);line-height:1.08}
+h3{font-size:1.14rem;font-weight:600;line-height:1.3}
+:focus-visible{outline:3px solid var(--teal-l);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:var(--gut) max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-inline:32px}}
+.sec{padding-block:112px;scroll-margin-top:72px}
+@media (max-width:760px){.sec{padding-block:72px}}
+.kick{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:16px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:58ch;margin-top:16px}
+.sh{max-width:720px;margin-bottom:56px}
+.sh-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:56px}
+.sh-row .sh{margin-bottom:0}
 .ico{width:18px;height:18px;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip:focus{position:fixed;z-index:100;top:12px;left:12px;width:auto;height:auto;clip:auto;background:var(--ink);color:#fff;padding:12px 18px;border-radius:12px}
 
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:700 16px var(--f-display);border-radius:999px;padding:14px 26px;border:2px solid transparent;cursor:pointer;transition:background .15s, transform .15s;text-align:center}
+/* ============ Buttons ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:13px 24px;border-radius:999px;border:1.5px solid transparent;font-weight:600;font-size:15.5px;line-height:1.2;cursor:pointer;text-align:center;transition:background .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease)}
 .btn:hover{transform:translateY(-1px)}
-.btn-g{background:var(--green);color:#fff}
-.btn-g:hover{background:var(--green-d)}
-.btn-line{border-color:currentColor;background:transparent}
-.btn-w{background:#fff;color:var(--green)}
+.btn-p{background:var(--teal);color:#fff;box-shadow:0 10px 24px -14px rgba(15,110,100,.9)}
+.btn-p:hover{background:var(--teal-d)}
+.btn-o{border-color:#CFCAC0;background:transparent;color:var(--ink)}
+.btn-o:hover{border-color:var(--ink);background:#fff}
 .btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#178F48}
+.btn-w{background:#fff;color:var(--ink)}
+.link{display:inline-flex;align-items:center;gap:8px;font-weight:600;color:var(--teal);background:none;border:0;padding:0;cursor:pointer}
+.link svg{transition:transform .25s var(--ease)}
+.link:hover svg{transform:translateX(3px)}
 
-/* Barra superior */
-.topbar{background:var(--navy);color:var(--navy-ink);font-size:14.5px}
-.topbar .in{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:9px;flex-wrap:wrap}
-.topbar .l,.topbar .r{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.topbar span{display:inline-flex;align-items:center;gap:7px}
-.soc{display:flex;gap:14px}
-.soc svg{width:16px;height:16px;fill:currentColor;opacity:.9}
-@media (max-width:720px){.topbar .mail,.topbar .soc{display:none}}
+/* ============ Header ============ */
+.hdr{position:sticky;top:0;z-index:60;background:rgba(251,250,247,.86);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.hdr.scrolled{border-color:var(--line);box-shadow:0 10px 30px -24px rgba(19,35,46,.5)}
+.hdr .wrap{display:flex;align-items:center;gap:28px;height:76px}
+.logo{display:flex;align-items:center;gap:11px;flex:none}
+.logo .mk{width:38px;height:38px;border-radius:11px;background:var(--teal);color:#fff;display:grid;place-items:center}
+.logo b{font:500 21px/1 var(--f-serif);letter-spacing:-.01em}
+.logo small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.menu{display:flex;gap:4px;margin-left:auto}
+.menu a{padding:10px 14px;border-radius:999px;font-weight:500;font-size:15px;color:var(--ink-2);transition:background .2s}
+.menu a:hover{background:rgba(19,35,46,.05)}
+.hphone{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px}
+.hdr .btn{min-height:44px;padding:10px 20px;font-size:15px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;place-items:center}
+.mob{border-top:1px solid var(--line);background:var(--bg)}
+.mob .wrap{display:flex;flex-direction:column;padding-block:12px 20px;height:auto;align-items:stretch;gap:0}
+.mob a:not(.btn){padding:14px 2px;border-bottom:1px solid var(--line);font-weight:500;font-size:17px}
+.mob .btn{margin-top:16px}
+@media (max-width:1080px){.hphone{display:none}}
+@media (max-width:920px){.menu{display:none}.burger{display:grid}.hdr .wrap{gap:12px}.hdr .cta{margin-left:auto}}
+.hdr .btn{white-space:nowrap}
+@media (max-width:420px){.hdr .wrap{gap:10px}.logo{gap:8px}.logo .mk{width:32px;height:32px;border-radius:9px}.logo small{display:none}.logo b{font-size:17px}.hdr .btn{padding:10px 14px;font-size:14px}.burger{width:42px;height:42px}}
 
-/* Cabecera */
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:#fff}
-header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:#fff;border-bottom:1px solid var(--line)}
-header.nav .in{display:flex;align-items:center;gap:22px;padding-block:14px}
-.logo{display:flex;align-items:center;gap:10px;flex:none}
-.logo .shell{width:42px;height:42px;border-radius:50%;background:var(--navy);display:grid;place-items:center}
-.logo b{font-family:var(--f-display);font-weight:800;font-size:26px;letter-spacing:-.01em;line-height:.9;display:block}
-.logo small{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:700}
-.menu{display:flex;align-items:center;gap:6px;margin-left:auto}
-.menu > a,.menu > button{background:none;border:none;font:700 16px var(--f-display);color:var(--ink);padding:10px 14px;border-radius:12px;cursor:pointer;display:inline-flex;align-items:center;gap:4px}
-.menu > a:hover,.menu > button:hover,.menu > button[aria-expanded="true"]{background:var(--mint);color:var(--green-d)}
-.menu .caret{width:10px;height:10px}
-.hphone{display:flex;align-items:center;gap:8px;font:800 16px var(--f-display);color:var(--ink);white-space:nowrap}
-.hphone svg{color:var(--green)}
-.cta-top{padding:13px 24px}
-.burger{display:none;margin-left:auto;background:var(--mint);border:none;border-radius:12px;width:46px;height:46px;cursor:pointer;color:var(--ink)}
-@media (max-width:1060px){.hphone{display:none}}
-@media (max-width:900px){.menu{display:none}.burger{display:grid;place-items:center}.cta-top{padding:11px 16px;font-size:14.5px}}
-@media (max-width:420px){.cta-top .t2{display:none}}
-@media (max-width:480px){header.nav .in{gap:10px}.logo b{font-size:19px}.logo small{font-size:9.5px}.logo .shell{width:34px;height:34px}.cta-top{padding:10px 13px}.burger{width:42px;height:42px}}
+/* ============ Hero: foto a sangre (estructura y animación inspiradas en 21st · Hero with Dashboard Mockup) ============ */
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(880px,calc(100svh - 76px));display:flex;align-items:center;color:#fff;background:#1B2A33}
+.hero-bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  linear-gradient(90deg,rgba(8,19,25,.82) 0%,rgba(8,19,25,.62) 34%,rgba(8,19,25,.18) 64%,rgba(8,19,25,0) 82%),
+  linear-gradient(0deg,rgba(8,19,25,.45) 0%,rgba(8,19,25,0) 35%)}
+.hero-in{width:100%;padding-block:96px}
+.hero-txt{max-width:600px;display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.hero h1{font-size:clamp(2.7rem,1.4rem + 4.6vw,5.2rem);line-height:1;letter-spacing:-.03em;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.hero h1 em{font-style:italic;color:#9BE0D0}
+.hero-txt > p:not(.proof){font-size:clamp(1.08rem,1rem + .4vw,1.3rem);color:rgba(255,255,255,.88);max-width:34ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.hero .btn{min-height:54px;padding-inline:28px;font-size:16px}
+.btn-glass{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.btn-glass:hover{background:rgba(255,255,255,.22);border-color:#fff}
+.proof{font-size:14.5px;font-weight:500;color:rgba(255,255,255,.85);display:flex;align-items:center;gap:8px}
+.proof .stars{font-size:16px;letter-spacing:0}
+.stars{color:var(--gold);letter-spacing:2px;font-size:15px}
 
-/* Mega menú */
-.mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-top:3px solid var(--green);border-radius:0 0 22px 22px;box-shadow:0 30px 50px -20px rgba(23,38,52,.3)}
-.mega .in{padding-block:26px}
-.mega-cols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
-.mega h4{font-size:17px;display:flex;align-items:center;gap:8px;padding-bottom:12px;border-bottom:2.5px solid currentColor;margin-bottom:12px}
-.mega a{display:block;font-weight:600;padding:6px 0;color:var(--ink)}
-.mega a:hover{color:var(--green)}
-.mega .all{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-weight:700;color:var(--green);display:inline-flex;gap:8px;align-items:center}
-.zones{display:grid;grid-template-columns:repeat(2,minmax(0,280px));gap:28px}
-.zones h4{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--green)}
-.zones p{color:var(--muted);font-size:14px}
+.hchat{position:absolute;right:max(32px,calc((100vw - 1200px)/2 + 32px));bottom:56px;width:290px;border-radius:20px;overflow:hidden;background:var(--chat);color:var(--ink);box-shadow:0 30px 60px -24px rgba(0,0,0,.6);font-size:13.5px;line-height:1.4}
+.hchat .top{display:flex;align-items:center;gap:10px;padding:11px 14px;background:var(--wa);color:#fff}
+.hchat .av{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;font-weight:700;font-size:14px}
+.hchat .top b{display:block;font-size:13.5px;line-height:1.2}
+.hchat .top small{font-size:11.5px;opacity:.9}
+.thread{padding:12px;display:flex;flex-direction:column;gap:6px}
+.hm{max-width:88%;padding:7px 10px;border-radius:11px;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+.hm.o{align-self:flex-end;background:var(--out);border-top-right-radius:3px}
+.hm.i{align-self:flex-start;background:var(--in);border-top-left-radius:3px}
+@media (max-width:1060px){.hchat{display:none}}
 
-.mob{border-top:1px solid var(--line);background:#fff}
-.mob .in{display:flex;flex-direction:column;padding-block:12px 18px}
-.mob a{padding:12px 0;font:700 17px var(--f-display);border-bottom:1px solid var(--line)}
-.mob .btn{margin-top:14px}
+@media (max-width:760px){
+  /* En móvil la foto va arriba, encuadrada en el dentista y el paciente, y se funde con el bloque de texto */
+  .hero{display:block;min-height:0;background:rgb(8,19,25);--ph:clamp(300px,54svh,460px)}
+  .hero-bg{position:relative;z-index:-2;height:var(--ph);object-position:58% 72%}
+  .hero::before{bottom:auto;height:var(--ph);background:linear-gradient(0deg,rgb(8,19,25) 0%,rgba(8,19,25,.55) 28%,rgba(8,19,25,0) 55%)}
+  .hero-in{margin-top:-72px;padding-block:0 44px}
+  .hero-txt{gap:18px}
+  .hero-cta{width:100%}
+  .hero-cta .btn{flex:1 1 100%}
+}
 
-/* Hero */
-.hero{background:var(--navy);color:var(--navy-ink);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-160px;top:-200px;background:radial-gradient(circle,rgba(19,164,126,.28),transparent 65%)}
-.hero .in{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:center;padding-block:56px 70px;position:relative}
-@media (max-width:920px){.hero .in{grid-template-columns:minmax(0,1fr);gap:36px;padding-block:36px 48px}}
-.crumbs{font-size:14.5px;color:var(--navy-muted);margin-bottom:22px}
-.badges{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px}
-.badge{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:8px 16px;font:800 13.5px var(--f-display);letter-spacing:.06em}
-.badge.g{background:rgba(19,164,126,.18);color:#5FD8B2;text-transform:uppercase}
-.badge.y{background:rgba(244,183,64,.16);color:var(--gold)}
-.hero h1{font-size:clamp(38px,5.6vw,64px);line-height:1.04;font-weight:800;color:#fff}
-.hero h1 span{color:#5FD8B2}
-.hero .sub{font-size:19px;color:var(--navy-muted);max-width:44ch;margin-top:18px}
-.prices{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
-.price{border-radius:18px;padding:16px 22px;min-width:160px}
-.price .k{font:800 12.5px var(--f-display);letter-spacing:.12em;text-transform:uppercase}
-.price .v{font:800 30px var(--f-display);line-height:1.2;margin-top:4px;font-variant-numeric:tabular-nums}
-.price .v small{font-size:15px;font-weight:700}
-.price.w{background:#fff;color:var(--ink)} .price.w .k{color:var(--muted)}
-.price.g{background:var(--green);color:#fff;box-shadow:0 14px 30px -12px rgba(19,164,126,.7)} .price.g .k{color:#D7F5EB}
-.price.o{border:1.5px solid rgba(255,255,255,.22);background:rgba(255,255,255,.05);color:#fff} .price.o .k{color:var(--navy-muted)} .price.o .v{font-size:24px}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero .btn-line{color:#fff}
+@media (prefers-reduced-motion:no-preference){
+  .hero-bg{animation:zoom 1.8s var(--ease) both}
+  .hr{animation:rise .7s var(--ease) both}
+  .hr:nth-child(1){animation-delay:.15s}.hr:nth-child(2){animation-delay:.27s}.hr:nth-child(3){animation-delay:.39s}.hr:nth-child(4){animation-delay:.51s}
+  .hchat{animation:pop .6s .9s var(--ease) both}
+  .thread .hm{animation:pop .4s var(--ease) both}
+  .thread .hm:nth-child(1){animation-delay:1.4s}.thread .hm:nth-child(2){animation-delay:2.1s}.thread .hm:nth-child(3){animation-delay:2.8s}.thread .hm:nth-child(4){animation-delay:3.5s}
+}
+@keyframes zoom{from{transform:scale(1.06)}to{transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
 
-.assistant{background:#fff;color:var(--ink);border-radius:26px;padding:22px;box-shadow:0 40px 60px -30px rgba(0,0,0,.6);position:relative}
-.assistant .top{display:flex;align-items:center;gap:12px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:14px}
-.assistant .av{width:44px;height:44px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff}
-.assistant .top b{display:block;font-family:var(--f-display);font-size:17px}
-.assistant .top small{color:var(--green);font-weight:600;font-size:13px}
-.thread{display:flex;flex-direction:column;gap:9px;background:var(--chat);border-radius:16px;padding:14px}
-.thread div{max-width:86%;padding:8px 11px;border-radius:12px;font-size:14.5px;line-height:1.4}
-.thread .i{background:var(--in);align-self:flex-start;border-top-left-radius:3px}
-.thread .o{background:var(--out);align-self:flex-end;border-top-right-radius:3px}
-.assistant .btn{width:100%;margin-top:16px}
-.assistant .note{font-size:13px;color:var(--muted);text-align:center;margin-top:10px}
-.float-tag{position:absolute;left:-18px;bottom:64px;background:var(--gold);color:var(--navy);font:800 13px var(--f-display);padding:8px 14px;border-radius:12px;transform:rotate(-4deg)}
-@media (max-width:920px){.float-tag{left:12px;bottom:auto;top:-14px}}
+/* ============ Trust strip ============ */
+.trust{padding-block:40px 8px}
+.trust ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-block:1px solid var(--line)}
+.trust li{display:flex;gap:14px;align-items:flex-start;padding:26px 22px}
+.trust li + li{border-left:1px solid var(--line)}
+.trust .ti{width:42px;height:42px;border-radius:12px;background:var(--mint);color:var(--teal);display:grid;place-items:center;flex:none}
+.trust b{display:block;font-weight:600;line-height:1.3}
+.trust span{font-size:14.5px;color:var(--muted)}
+@media (max-width:960px){.trust ul{grid-template-columns:repeat(2,minmax(0,1fr))}.trust li:nth-child(3){border-left:0}.trust li:nth-child(n+3){border-top:1px solid var(--line)}}
+@media (max-width:520px){.trust ul{grid-template-columns:minmax(0,1fr)}.trust li{padding:18px 4px}.trust li + li{border-left:0;border-top:1px solid var(--line)}}
 
-/* Franja */
-.trust{background:var(--soft);border-bottom:1px solid var(--line)}
-.trust .in{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding-block:24px}
-@media (max-width:820px){.trust .in{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.trust div{display:flex;gap:12px;align-items:center}
-.trust .ti{width:44px;height:44px;border-radius:14px;background:var(--mint);color:var(--green);display:grid;place-items:center;flex:none}
-.trust b{display:block;font-family:var(--f-display);font-size:16.5px;line-height:1.2}
-.trust span{font-size:14px;color:var(--muted)}
+/* ============ Treatments ============ */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:0 26px 26px;overflow:hidden;display:flex;flex-direction:column;gap:12px;transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .35s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--sh-sm);border-color:var(--mint-2)}
+.card .ph{position:relative;margin:0 -26px;aspect-ratio:16/10;background:var(--sand);overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.card:hover .ph img{transform:scale(1.04)}
+.card .ic{position:relative;z-index:1;margin:-35px 0 2px -4px;width:46px;height:46px;border-radius:14px;background:#fff;color:var(--teal);display:grid;place-items:center;box-shadow:var(--sh-sm)}
+.card h3{margin-top:4px}
+.card p{color:var(--muted);font-size:15.5px}
+.card .price{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.card .price small{display:block;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.card .price strong{font:400 28px/1.1 var(--f-serif);letter-spacing:-.01em}
+.card .price em{font-style:normal;font-size:14px;color:var(--teal);font-weight:600}
+.fine{font-size:13.5px;color:var(--muted);margin-top:24px}
+@media (max-width:980px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.cards{grid-template-columns:minmax(0,1fr)}.card{padding:24px}}
 
-section.blk .in{padding-block:76px}
-@media (max-width:760px){section.blk .in{padding-block:52px}}
-.sh{display:flex;flex-direction:column;gap:10px;margin-bottom:36px;max-width:64ch}
-.kick{font:800 13px var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
-.sh h2{font-size:clamp(30px,4.2vw,46px);line-height:1.08;font-weight:800}
-.sh p{color:var(--muted);font-size:17.5px}
+/* ============ Why us ============ */
+.why{background:var(--sand)}
+.why-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:center}
+.why-photo{position:relative}
+.why-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:26px}
+.why-photo .inset{position:absolute;left:-28px;top:40px;width:44%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;border:6px solid var(--sand);box-shadow:var(--sh-lg)}
+@media (max-width:1240px){.why-photo .inset{left:16px;top:16px}}
+.why-photo .badge{position:absolute;right:-20px;bottom:32px;max-width:250px;background:#fff;border-radius:18px;padding:18px 20px;box-shadow:var(--sh-lg);font-size:14.5px;color:var(--muted)}
+.why-photo .badge b{display:block;color:var(--ink);font-size:15.5px;margin-bottom:2px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 32px;margin:40px 0;padding-block:32px;border-block:1px solid #DDD3C4}
+.stat strong{display:block;font:400 clamp(2.4rem,2rem + 1.4vw,3.2rem)/1 var(--f-serif);letter-spacing:-.02em;color:var(--teal-d)}
+.stat span{display:block;margin-top:8px;font-size:14.5px;color:var(--muted)}
+.adv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px}
+.adv li{display:flex;gap:14px}
+.adv .ti{width:40px;height:40px;border-radius:12px;background:#fff;color:var(--teal);display:grid;place-items:center;flex:none}
+.adv b{display:block;font-weight:600;margin-bottom:2px}
+.adv span{font-size:14.5px;color:var(--muted)}
+@media (max-width:980px){.why-grid{grid-template-columns:minmax(0,1fr);gap:48px}.why-photo{max-width:520px}.why-photo img{aspect-ratio:5/4}.why-photo .badge{right:16px;bottom:-24px}}
+@media (max-width:560px){.adv{grid-template-columns:minmax(0,1fr)}.stats{gap:24px 16px}}
 
-/* Tratamientos por categoría */
-.cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-@media (max-width:980px){.cats{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:620px){.cats{grid-template-columns:minmax(0,1fr)}}
-.cat{border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px;background:#fff;scroll-margin-top:110px}
-.cat h3{font-size:21px;display:flex;align-items:center;gap:10px;padding-bottom:14px;border-bottom:2.5px solid var(--cc)}
-.cat h3 .dot{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:color-mix(in srgb,var(--cc) 14%,#fff);color:var(--cc)}
-.cat ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-.cat li{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.cat li b{font-weight:600}
-.cat li span{font:800 15px var(--f-display);white-space:nowrap;font-variant-numeric:tabular-nums}
-.cat li span small{font-weight:600;color:var(--muted);font-family:var(--f-body);font-size:12.5px}
-.cat .fin{margin-top:auto;font-size:13.5px;color:var(--muted);padding-top:6px}
-.cat.promo{background:var(--navy);color:#fff;border-color:var(--navy);justify-content:space-between}
-.cat.promo h3{border:none;padding:0;font-size:26px;color:#fff}
-.cat.promo p{color:var(--navy-muted)}
+/* ============ Team ============ */
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.doc img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-lg);background:var(--sand);transition:transform .6s var(--ease)}
+.doc figure{margin:0 0 18px;overflow:hidden;border-radius:var(--r-lg)}
+.doc:hover img{transform:scale(1.03)}
+.doc h3{font:400 1.4rem/1.2 var(--f-serif);letter-spacing:-.01em}
+.doc .role{color:var(--teal);font-weight:600;font-size:14.5px;margin-top:4px}
+.doc p{color:var(--muted);font-size:14.5px;margin-top:10px}
+.doc .col{display:inline-block;margin-top:12px;font-size:12.5px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-variant-numeric:tabular-nums}
+@media (max-width:980px){.team{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}}
+@media (max-width:460px){.team{grid-template-columns:minmax(0,1fr)}.doc img{aspect-ratio:1/1}}
 
-/* Destacado */
-.feat{background:var(--soft)}
-.feat-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:start}
-@media (max-width:980px){.feat-grid{grid-template-columns:minmax(0,1fr)}}
-.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin-bottom:26px;overflow-x:auto}
-.tabs button{background:none;border:none;border-bottom:3px solid transparent;padding:12px 18px;font:700 17px var(--f-display);color:var(--muted);cursor:pointer;white-space:nowrap}
-.tabs button[aria-selected="true"]{color:var(--green);border-bottom-color:var(--green)}
-.panel p{font-size:17.5px;color:var(--muted);line-height:1.75;max-width:64ch}
-.panel ul{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-@media (max-width:620px){.panel ul{grid-template-columns:minmax(0,1fr)}}
-.panel li{display:flex;gap:10px;font-size:16px}
-.panel li svg{color:var(--green);flex:none;margin-top:3px}
-.panel ol{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;counter-reset:p}
-.panel ol li{counter-increment:p;align-items:flex-start}
-.panel ol li::before{content:counter(p);width:32px;height:32px;border-radius:50%;background:var(--mint);color:var(--green-d);font:800 15px var(--f-display);display:grid;place-items:center;flex:none}
-.panel ol b{display:block}
-.panel ol span{color:var(--muted);font-size:15px}
-.side{display:flex;flex-direction:column;gap:18px;position:sticky;top:100px}
-@media (max-width:980px){.side{position:static}}
-.card-g{background:var(--green);color:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:14px}
-.card-g h3{font-size:25px}
-.card-g p{color:#DDF6EE}
-.card-g .btn{width:100%}
-.card-g .btn-line{color:#fff}
-.card-p{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px}
-.card-p h4{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
-.pp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.pp div{border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center}
-.pp div.g{background:var(--mint);border-color:var(--mint-2)}
-.pp .k{font:800 11.5px var(--f-display);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.pp .g .k{color:var(--green-d)}
-.pp .v{font:800 30px var(--f-display);margin-top:6px;font-variant-numeric:tabular-nums}
-.pp .g .v{color:var(--green-d)}
-.pp .v small{font-size:15px}
-.pp .s{font-size:12.5px;color:var(--muted)}
-.fine{font-size:12px;color:var(--muted);margin-top:12px}
+/* ============ Testimonials ============ */
+.reviews{background:var(--mint)}
+.score{display:flex;align-items:center;gap:16px;background:#fff;border-radius:18px;padding:16px 22px;box-shadow:var(--sh-sm)}
+.score strong{font:400 42px/1 var(--f-serif)}
+.score span{display:block;font-size:14px;color:var(--muted)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.quote{margin:0;background:#fff;border-radius:var(--r-lg);padding:30px;display:flex;flex-direction:column;gap:18px}
+.quote blockquote{margin:0;font:400 1.24rem/1.45 var(--f-serif);letter-spacing:-.005em}
+.quote figcaption{margin-top:auto;display:flex;align-items:center;gap:12px;padding-top:18px;border-top:1px solid var(--line)}
+.quote .av{width:42px;height:42px;border-radius:50%;background:var(--mint);color:var(--teal-d);display:grid;place-items:center;font-weight:700;font-size:15px}
+.quote figcaption b{display:block;font-size:15px}
+.quote figcaption span{font-size:13.5px;color:var(--muted)}
+@media (max-width:980px){.quotes{grid-template-columns:minmax(0,1fr)}}
 
-/* Historias */
-.stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
-@media (max-width:920px){.stories{grid-template-columns:minmax(0,1fr)}}
-.story{border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
-.story .ban{background:var(--green);color:#fff;padding:22px 22px 18px;position:relative;overflow:hidden;min-height:150px;display:flex;flex-direction:column;justify-content:space-between}
-.story .ban::after{content:"";position:absolute;inset:auto -40px -60px auto;width:180px;height:180px;border-radius:50%;border:22px solid rgba(255,255,255,.12)}
-.story .q{font:800 64px/0.7 var(--f-display);opacity:.5}
-.story .tr{font:800 28px var(--f-display);line-height:1.05;text-transform:uppercase;letter-spacing:.01em;position:relative;z-index:1}
-.story .who{display:inline-block;background:var(--navy);color:#fff;font:800 15px var(--f-display);letter-spacing:.08em;padding:6px 14px;border-radius:8px;transform:rotate(-2deg);align-self:flex-start;margin-top:10px;position:relative;z-index:1}
-.story .body{padding:20px 22px 24px;display:flex;flex-direction:column;gap:10px}
-.story .body b{font-family:var(--f-display);font-size:18px}
-.story .body p{color:var(--muted);font-size:15.5px}
-.stars{color:var(--gold);letter-spacing:1px}
+/* ============ FAQ ============ */
+.faq-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:72px}
+.faq-side .btn{margin-top:28px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-weight:600;font-size:1.06rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pm{width:32px;height:32px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:transform .3s var(--ease),background .3s}
+.faq details[open] summary .pm{transform:rotate(45deg);background:var(--mint);border-color:var(--mint)}
+.faq details p{color:var(--muted);padding:0 52px 24px 0;max-width:62ch}
+@media (max-width:900px){.faq-grid{grid-template-columns:minmax(0,1fr);gap:32px}.faq details p{padding-right:0}}
 
-/* Buscador */
-.finder{background:linear-gradient(120deg,var(--green-d),#1BBE92);color:#fff;border-radius:28px;padding:36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:center;margin-bottom:44px}
-@media (max-width:860px){.finder{grid-template-columns:minmax(0,1fr);padding:26px}}
-.finder h2{font-size:clamp(26px,3.4vw,36px);display:flex;gap:10px;align-items:flex-start}
-.finder p{color:#E2F8F0;margin-top:8px}
-.search{display:flex;background:#fff;border-radius:18px;padding:6px;gap:6px}
-.search input{flex:1;min-width:0;border:none;padding:12px 14px;font:inherit;font-size:16.5px;color:var(--ink);background:transparent;border-radius:12px}
-.search input:focus{outline:none}
-.search:focus-within{outline:3px solid rgba(255,255,255,.6)}
-.search .btn{padding:12px 20px;border-radius:13px}
-.res{margin-top:12px;font-size:14.5px;color:#E2F8F0;min-height:1.4em}
+/* ============ Clinics ============ */
+.clinics{background:var(--sand)}
+.sedes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.sede{background:#fff;border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:96px}
+.sede iframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:var(--mint)}
+.sede .body{padding:30px;display:flex;flex-direction:column;gap:20px;flex:1}
+.sede h3{font:400 1.6rem/1.15 var(--f-serif);letter-spacing:-.01em}
+.sede .addr{color:var(--muted);margin-top:6px}
+.route{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:15px}
+.route li{display:flex;gap:12px;align-items:center}
+.route .ri{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font-weight:700;font-size:13px;color:#fff;flex:none}
+.ri.m{background:#C8102E}.ri.c{background:#6E4BB0}.ri.b{background:#2B6CB0}
+.hours{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 24px;font-size:15px;padding:18px 20px;background:var(--bg);border-radius:var(--r-md)}
+.hours dt{font-weight:600}
+.hours dd{margin:0;color:var(--muted);font-variant-numeric:tabular-nums}
+.sede .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:auto}
+@media (max-width:900px){.sedes{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.sede .body{padding:22px}.sede .row .btn{flex:1 1 100%}}
 
-.sedes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
-@media (max-width:820px){.sedes{grid-template-columns:minmax(0,1fr)}}
-.sede{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:16px;transition:box-shadow .3s, border-color .3s;scroll-margin-top:110px}
-.sede.hit{border-color:var(--green);box-shadow:0 0 0 4px var(--mint-2)}
-.sede h3{font-size:25px}
-.sede .addr{font:700 17px var(--f-display)}
-.sede .addr + span{color:var(--muted);font-size:14.5px}
-.open{display:inline-flex;align-items:center;gap:7px;background:var(--mint);color:var(--green-d);border-radius:999px;padding:6px 14px;font-weight:700;font-size:14px;align-self:flex-start}
-.map{border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-.map svg{display:block;width:100%;height:auto}
-.map .blk{fill:#E9EEEB} .map .park{fill:#CFE7D3}
-.map .road{stroke:#fff;fill:none;stroke-linecap:round}
-.map .main{stroke:#F6E1AE;fill:none;stroke-linecap:round}
-.map .walk{stroke:var(--green);fill:none;stroke-width:3.5;stroke-dasharray:2 7;stroke-linecap:round}
-.map .st{fill:#5E6B65;font:600 10.5px var(--f-body)}
-.map .pk{fill:var(--green)} .map .pk-in{fill:#fff}
-.map .met{fill:#D33A3A} .map .rail{fill:#7A5BB5} .map .wt{fill:#fff;font:800 11px var(--f-body)}
-.map .tag{fill:#fff;stroke:var(--line)} .map .tag-t{fill:var(--ink);font:700 12px var(--f-body)} .map .tag-s{fill:var(--green);font:600 10.5px var(--f-body)}
-.route{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none;font-size:15px}
-.route li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start}
-.route .ri{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font:800 12px var(--f-body);color:#fff}
-.route .m{background:#D33A3A} .route .r{background:#7A5BB5} .route .b{background:#2F6FD1} .route .p{background:#7B8A92}
-.route b{display:block}
-.route span{color:var(--muted);font-size:14px}
-.sede .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
-.sede .row .btn{padding:11px 18px;font-size:14.5px}
-.sede .btn-line{color:var(--ink);border-color:var(--line)}
-
-/* FAQ */
-.faq{display:flex;flex-direction:column;gap:12px;max-width:820px}
-details{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
-details[open]{border-color:var(--mint-2)}
-summary{cursor:pointer;list-style:none;padding:20px 24px;font:700 18px var(--f-display);display:flex;justify-content:space-between;gap:16px;align-items:center}
-details[open] summary{background:var(--mint);color:var(--green-d)}
-summary::-webkit-details-marker{display:none}
-summary svg{transition:transform .2s;flex:none}
-details[open] summary svg{transform:rotate(180deg)}
-details p{padding:18px 24px 22px;color:var(--muted);font-size:16px}
-
-/* Contacto */
-.contact-hero{background:var(--navy);color:#fff;text-align:center;position:relative}
-.contact-hero .in{padding-block:64px 110px}
-.contact-hero h2{font-size:clamp(32px,4.6vw,52px);font-weight:800}
-.contact-hero p{color:var(--navy-muted);font-size:18px;max-width:52ch;margin:14px auto 0}
-.contact-hero svg.curve{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:60px;display:block}
-.contact .in{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;padding-block:0 76px;margin-top:-60px;position:relative}
-@media (max-width:920px){.contact .in{grid-template-columns:minmax(0,1fr)}}
-.formcard{background:#fff;border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 30px 50px -30px rgba(23,38,52,.35)}
-@media (max-width:620px){.formcard{padding:22px}}
-.formcard h3{font-size:30px}
-.formcard > p{color:var(--green);margin:6px 0 24px}
+/* ============ Appointment ============ */
+.book{background:var(--ink);color:#fff}
+.book-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:72px;align-items:start}
+.book .kick{color:var(--teal-l)}
+.book .lead{color:#B9C6CD}
+.ways{list-style:none;margin:40px 0 0;padding:0;display:flex;flex-direction:column;gap:22px}
+.ways li{display:flex;gap:16px;align-items:flex-start}
+.ways .ti{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.08);color:var(--teal-l);display:grid;place-items:center;flex:none}
+.ways b{display:block;font-weight:600}
+.ways span,.ways a{color:#B9C6CD;font-size:15px}
+.ways a:hover{color:#fff}
+.ways .btn{margin-top:12px;min-height:44px;padding:10px 18px;font-size:14.5px}
+.formcard{background:#fff;color:var(--ink);border-radius:26px;padding:40px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.formcard h3{font:400 1.7rem/1.2 var(--f-serif);letter-spacing:-.01em}
+.formcard .sub{color:var(--muted);margin:6px 0 28px;font-size:15px}
 .fgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-@media (max-width:620px){.fgrid{grid-template-columns:minmax(0,1fr)}}
 .f{display:flex;flex-direction:column;gap:7px}
 .f.full{grid-column:1/-1}
-.f label{font-weight:700;font-size:15px}
-.f input,.f select,.f textarea{font:inherit;font-size:16px;border:1.5px solid var(--line);border-radius:14px;padding:13px 16px;background:#fff;color:var(--ink);width:100%}
-.f textarea{min-height:110px;resize:vertical}
-.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 4px var(--mint)}
-.chk{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--muted);grid-column:1/-1}
-.chk input{width:18px;height:18px;margin-top:2px;accent-color:var(--green)}
-.chk a{color:var(--green);font-weight:600}
-.formcard .btn{margin-top:22px;width:100%}
-.err{color:#C2384A;font-size:14px;margin-top:10px;min-height:1.2em}
-.ok{text-align:center;padding:30px 10px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.ok .tick{width:64px;height:64px;border-radius:50%;background:var(--mint);color:var(--green);display:grid;place-items:center}
-.ok h3{font-size:26px}
-.ok p{color:var(--muted);max-width:40ch}
-.info{display:flex;flex-direction:column;gap:22px;padding-top:80px}
-@media (max-width:920px){.info{padding-top:0}}
-.info h3{font-size:30px}
-.irow{display:flex;gap:16px;align-items:flex-start}
-.irow .ii{width:56px;height:56px;border-radius:16px;background:var(--mint);color:var(--green);display:grid;place-items:center;flex:none}
-.irow b{display:block;font-family:var(--f-display);font-size:18px}
-.irow span{color:var(--green);display:block}
-.irow small{color:var(--muted);font-size:14px}
+.f label,.f legend{font-size:14px;font-weight:600}
+.f input,.f select{width:100%;min-height:50px;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg);font-size:16px;transition:border-color .2s,background .2s}
+.f input:focus,.f select:focus{outline:0;border-color:var(--teal);background:#fff}
+.f [aria-invalid="true"]{border-color:#C2412D;background:#FFF7F5}
+.f .msg{font-size:13.5px;color:#B3361F}
+fieldset.f{border:0;margin:0;padding:0;min-width:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:7px}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-flex;align-items:center;min-height:44px;padding:10px 18px;border:1.5px solid var(--line);border-radius:999px;font-size:15px;font-weight:500;background:var(--bg);transition:all .2s}
+.chips input:checked + span{border-color:var(--teal);background:var(--mint);color:var(--teal-d)}
+.chips input:focus-visible + span{outline:3px solid var(--teal-l);outline-offset:2px}
+.chk{grid-column:1/-1;display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--muted);cursor:pointer}
+.chk input{width:20px;height:20px;margin-top:2px;accent-color:var(--teal);flex:none}
+.chk a{color:var(--teal);text-decoration:underline}
+.formcard .send{width:100%;margin-top:26px}
+.formcard .note{font-size:13px;color:var(--muted);text-align:center;margin-top:14px}
+.okbox{text-align:center;padding:24px 0}
+.okbox .tick{width:64px;height:64px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;margin:0 auto 20px}
+.okbox p{color:var(--muted);margin:10px auto 24px;max-width:40ch}
+@media (max-width:980px){.book-grid{grid-template-columns:minmax(0,1fr);gap:48px}}
+@media (max-width:600px){.formcard{padding:26px 20px;border-radius:22px}.fgrid{grid-template-columns:minmax(0,1fr)}}
 
-/* Pie */
-footer{background:var(--navy);color:var(--navy-ink)}
-footer .in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr);gap:44px;padding-block:60px 30px}
-@media (max-width:900px){footer .in{grid-template-columns:minmax(0,1fr)}}
-footer h4{font-size:15px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:20px}
-footer p{color:var(--navy-muted);font-size:16px;max-width:42ch}
-.fsoc{display:flex;gap:10px;margin:22px 0}
-.fsoc span{width:44px;height:44px;border-radius:50%;background:var(--navy-2);display:grid;place-items:center}
-.fsoc svg{width:17px;height:17px;fill:currentColor}
-.stats{display:flex;gap:26px;flex-wrap:wrap}
-.stats b{display:block;font:800 26px var(--f-display);color:#5FD8B2;line-height:1.1}
-.stats span{font-size:13.5px;color:var(--navy-muted)}
-.flist{display:flex;flex-direction:column;gap:12px;color:var(--navy-muted)}
-.flist a:hover{color:#5FD8B2}
-.fcont{display:flex;flex-direction:column;gap:14px;color:var(--navy-muted)}
-.fcont span{display:flex;gap:10px;align-items:center}
-.fcont svg{color:var(--green)}
-.legal{border-top:1px solid var(--navy-2)}
-.legal .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:18px;font-size:13px;color:var(--navy-muted);grid-template-columns:none}
+/* ============ Footer ============ */
+.foot{background:var(--night);color:#B9C6CD;padding-top:72px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,5fr) repeat(3,minmax(0,3fr));gap:40px;padding-bottom:56px}
+.foot .logo b{color:#fff}
+.foot .logo small{color:#8FA1AA}
+.foot p{margin-top:18px;max-width:36ch}
+.foot h2{font:600 13px/1 var(--f-sans);letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:20px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.foot a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.1);padding-block:22px calc(22px + env(safe-area-inset-bottom,0px));font-size:13.5px;color:#8FA1AA}
+.legal .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.legal nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+.demo{display:inline-flex;align-items:center;gap:8px}
+.demo::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold)}
+@media (max-width:900px){.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.foot-grid > div:first-child{grid-column:1/-1}}
+@media (max-width:480px){.foot-grid{grid-template-columns:minmax(0,1fr)}}
 
-/* Modal */
-.modal{position:fixed;inset:0;z-index:80;background:rgba(14,24,33,.6);display:flex;align-items:flex-start;justify-content:center;overflow-y:auto;padding:calc(30px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(30px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
-.mbox{background:#fff;border-radius:26px;overflow:hidden;width:100%;max-width:760px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
-.mhead{background:linear-gradient(120deg,var(--green-d),#1BBE92);color:#fff;padding:26px 30px;position:relative}
-.mhead h3{font-size:27px;display:flex;align-items:center;gap:10px}
-.mhead p{color:#E2F8F0;margin-top:6px}
-.mhead .x{position:absolute;top:16px;right:16px;width:42px;height:42px;border:none;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;font-size:26px;line-height:1;cursor:pointer}
-.mbody{padding:28px 30px 30px}
-@media (max-width:620px){.mhead,.mbody{padding-left:20px;padding-right:20px}}
-.wa-alt{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:var(--soft);border-radius:16px;padding:14px 18px;margin-bottom:22px}
-.wa-alt span{font-weight:600}
-.wa-alt .btn{padding:10px 18px;font-size:14.5px}
+/* ============ Scroll reveal ============ */
+@media (prefers-reduced-motion:no-preference){
+  .js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+  .js .rv.on{opacity:1;transform:none}
+}
 
-/* WhatsApp */
-.fab{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;width:62px;height:62px;border-radius:50%;background:var(--wa);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45)}
-.fab .bdg{position:absolute;top:-2px;right:-2px;width:21px;height:21px;border-radius:50%;background:#E5484D;color:#fff;font:700 12px var(--f-body);display:grid;place-items:center}
-.chatbox{position:fixed;z-index:90;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(94px + env(safe-area-inset-bottom,0px));width:372px;height:min(600px,calc(100% - 130px));background:var(--chat);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 26px 60px -18px rgba(0,0,0,.5)}
+/* ============ WhatsApp assistant ============ */
+.fab{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(19,35,46,.55);transition:transform .25s var(--ease)}
+.fab:hover{transform:scale(1.06)}
+.fab .bdg{position:absolute;top:-2px;right:-2px;width:21px;height:21px;border-radius:50%;background:#E5484D;color:#fff;font:700 12px var(--f-sans);display:grid;place-items:center;border:2px solid var(--bg)}
+.chatbox{position:fixed;z-index:90;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(92px + env(safe-area-inset-bottom,0px));width:380px;height:min(600px,calc(100% - 130px));background:var(--chat);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 30px 70px -20px rgba(19,35,46,.55)}
+@media (prefers-reduced-motion:no-preference){.chatbox:not([hidden]){animation:pop .35s var(--ease)}}
 @media (max-width:520px){.chatbox{inset:0;width:auto;height:auto;border-radius:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}
 .ch{background:var(--wa);color:#fff;display:flex;align-items:center;gap:10px;padding:12px 12px 12px 14px}
-.ch .av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font:800 16px var(--f-display)}
+.ch .av{width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.25);display:grid;place-items:center;font-weight:700;font-size:16px}
 .ch b{display:block;font-size:15px;line-height:1.2}
-.ch small{font-size:12px;opacity:.9}
-.ch .x{margin-left:auto;background:none;border:none;color:#fff;width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:24px;line-height:1}
+.ch small{font-size:12px;opacity:.92}
+.ch .x{margin-left:auto;background:none;border:none;color:#fff;width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:26px;line-height:1}
 .msgs{flex:1;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:8px}
 .b{max-width:85%;padding:8px 10px 6px;border-radius:10px;font-size:14.5px;line-height:1.42;white-space:pre-line;box-shadow:0 1px 0 rgba(0,0,0,.06);animation:pop .18s ease-out}
 .b.i{background:var(--in);align-self:flex-start;border-top-left-radius:2px}
@@ -349,414 +395,435 @@ footer p{color:var(--navy-muted);font-size:16px;max-width:42ch}
 .typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
 .typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
 .quick{display:flex;flex-wrap:wrap;gap:6px}
-.quick button{font:600 13.5px var(--f-body);color:var(--green-d);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px;cursor:pointer}
+.quick button{font:600 13.5px var(--f-sans);color:var(--teal-d);background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 13px;cursor:pointer}
 .comp{display:flex;gap:8px;padding:8px;border-top:1px solid rgba(0,0,0,.06)}
-.comp input{flex:1;min-width:0;border:none;border-radius:999px;padding:11px 15px;font:inherit;font-size:15px;background:#fff;color:var(--ink)}
-.comp input:focus{outline:2px solid var(--green)}
+.comp input{flex:1;min-width:0;border:none;border-radius:999px;padding:11px 15px;font-size:16px;background:#fff;color:var(--ink)}
+.comp input:focus{outline:2px solid var(--teal)}
 .comp button{width:44px;height:44px;flex:none;border-radius:50%;border:none;background:var(--wa);color:#fff;cursor:pointer;display:grid;place-items:center}
-@keyframes pop{from{transform:translateY(4px);opacity:.4}to{transform:none;opacity:1}}
 @keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7v.3l8 5.2 8-5.2V7z"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></symbol>
-  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm12 7H5v10h14zm-8.7 8-3-3 1.4-1.4 1.6 1.6 4.3-4.3 1.4 1.4z"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
-  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-tooth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M7.5 3.5c-2.5 0-4 2-4 4.6 0 2.2.9 3.6 1.6 5.6.6 1.8.8 6.8 2.6 6.8 1.6 0 1.4-4.4 2.3-5.6.5-.7 1.5-.7 2 0 .9 1.2.7 5.6 2.3 5.6 1.8 0 2-5 2.6-6.8.7-2 1.6-3.4 1.6-5.6 0-2.6-1.5-4.6-4-4.6-1.8 0-2.6 1-4.5 1s-2.7-1-4.5-1z"/></symbol>
+  <symbol id="i-implant" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8.2 2.5h7.6c1.1 0 1.8.9 1.5 2l-.8 3.5H7.5l-.8-3.5c-.3-1.1.4-2 1.5-2z"/><path d="M9 11h6M9.5 14h5M10 17h4M11 20h2M12 8v13.5"/></g></symbol>
+  <symbol id="i-aligner" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8.5c0 6.5 3.8 11 8.5 11s8.5-4.5 8.5-11"/><path d="M7.5 8.5c0 4.2 2 7.2 4.5 7.2s4.5-3 4.5-7.2"/><path d="M3.5 8.5h4M16.5 8.5h4"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></g></symbol>
+  <symbol id="i-bridge" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7.5h18v5.2c0 1-.8 1.8-1.8 1.8H4.8c-1 0-1.8-.8-1.8-1.8z"/><path d="M9 7.5v7M15 7.5v7M6 14.5V19M18 14.5V19"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 2.8v5.4c0 4.4-3 8.1-7 9.8-4-1.7-7-5.4-7-9.8V5.8z"/><path d="m9 12 2.2 2.2L15.5 10"/></g></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></symbol>
+  <symbol id="i-euro" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M17.5 6.2A6.5 6.5 0 1 0 17.5 17.8"/><path d="M4.5 10h9M4.5 14h9"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3h7.5l4 4v14h-11.5z"/><path d="M14 3v4h4M9.5 12h5M9.5 16h5"/></g></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><path d="M7 12h10"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M19.5 14.5A8 8 0 0 1 9.5 4.5a8 8 0 1 0 10 10z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M5 3.5h3.5l1.7 4.3-2.2 1.5a11 11 0 0 0 6.7 6.7l1.5-2.2 4.3 1.7V19a1.5 1.5 0 0 1-1.5 1.5A16.5 16.5 0 0 1 3.5 5 1.5 1.5 0 0 1 5 3.5z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.6 7-12a7 7 0 0 0-14 0c0 5.4 7 12 7 12z" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.5"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
   <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></symbol>
-  <symbol id="i-shell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 20c-4.5 0-8-2.6-8-6.2C4 9.4 7.6 4 12 4s8 5.4 8 9.8c0 3.6-3.5 6.2-8 6.2z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 20V7M8.2 18.8 9.5 8M15.8 18.8 14.5 8"/></symbol>
-  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.2V10H7v4h3v7h4v-7h3l1-4h-4V8.6c0-.4.3-.6.6-.6z"/></symbol>
-  <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm4.9-8.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM20.9 8c-.1-1.5-.4-2.8-1.5-3.9S17 2.7 15.5 2.6C14 2.5 9.9 2.5 8.4 2.6 6.9 2.7 5.6 3 4.5 4.1S3.1 6.5 3 8c-.1 1.5-.1 5.6 0 7.1.1 1.5.4 2.8 1.5 3.9s2.4 1.4 3.9 1.5c1.5.1 5.6.1 7.1 0 1.5-.1 2.8-.4 3.9-1.5s1.4-2.4 1.5-3.9c.1-1.5.1-5.6 0-7.1z"/></symbol>
-  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M16.5 3c.4 2.3 1.9 3.8 4 4v3.2a7.5 7.5 0 0 1-4-1.3V15a6 6 0 1 1-6-6h.7v3.3a2.7 2.7 0 1 0 2 2.6V3z"/></symbol>
-  <symbol id="i-yt" viewBox="0 0 24 24"><path d="M22 8.2c-.2-1.6-1-2.7-2.6-2.9C17 5 12 5 12 5s-5 0-7.4.3C3 5.5 2.2 6.6 2 8.2a29 29 0 0 0 0 7.6c.2 1.6 1 2.7 2.6 2.9C7 19 12 19 12 19s5 0 7.4-.3c1.6-.2 2.4-1.3 2.6-2.9a29 29 0 0 0 0-7.6zM10 15V9l5.2 3z"/></symbol>
 </svg>
 
-<div class="topbar">
-  <div class="in">
-    <div class="l">
-      <span><svg class="ico"><use href="#i-phone"/></svg>910 000 100</span>
-      <span class="mail"><svg class="ico"><use href="#i-mail"/></svg>hola@dentistaexample.es</span>
-    </div>
-    <div class="r">
-      <span><svg class="ico"><use href="#i-pin"/></svg>2 clínicas en Madrid</span>
-      <span class="soc" aria-label="Redes sociales"><svg><use href="#i-fb"/></svg><svg><use href="#i-ig"/></svg><svg><use href="#i-tt"/></svg><svg><use href="#i-yt"/></svg></span>
-    </div>
-  </div>
-</div>
+<a class="sr skip" href="#main">Saltar al contenido</a>
 
-<header class="nav" id="nav">
-  <div class="in">
-    <a class="logo" href="#inicio" aria-label="DentistaExample Clínica Dental, inicio">
-      <span class="shell" aria-hidden="true"><svg width="24" height="24" style="color:#5FD8B2"><use href="#i-shell"/></svg></span>
-      <span><b>Dentista<span style="color:var(--green)">Example</span></b><small>Clínica dental</small></span>
+<!-- ============ Cabecera ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="DentistaExample Clínica Dental, ir al inicio">
+      <span class="mk" aria-hidden="true"><svg width="22" height="22"><use href="#i-tooth"/></svg></span>
+      <span><b>DentistaExample</b><small>Clínica dental</small></span>
     </a>
     <nav class="menu" aria-label="Principal">
-      <button type="button" id="m-trat" aria-expanded="false" aria-controls="mega-trat">Tratamientos <svg class="caret"><use href="#i-down"/></svg></button>
-      <button type="button" id="m-cli" aria-expanded="false" aria-controls="mega-cli">Clínicas <svg class="caret"><use href="#i-down"/></svg></button>
-      <a href="#historias">Pacientes</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a class="hphone" href="#contacto"><svg class="ico"><use href="#i-phone"/></svg>910 000 100</a>
-    <button class="btn btn-g cta-top" type="button" data-form><svg class="ico"><use href="#i-cal"/></svg>Cita <span class="t2">Gratuita</span></button>
-    <button class="burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
-  </div>
-
-  <div class="mega" id="mega-trat" hidden>
-    <div class="in">
-      <div class="mega-cols">
-        <div><h4 style="color:var(--c-impl)">Implantes</h4><a href="#cat-impl">Implante + corona de zirconio</a><a href="#cat-impl">Implantes cigomáticos</a></div>
-        <div><h4 style="color:var(--c-prot)">Prótesis</h4><a href="#cat-prot">Prótesis fija</a><a href="#cat-prot">Prótesis removible</a></div>
-        <div><h4 style="color:var(--c-orto)">Ortodoncia</h4><a href="#cat-orto">Ortodoncia invisible</a><a href="#cat-orto">Brackets</a></div>
-        <div><h4 style="color:var(--c-est)">Estética dental</h4><a href="#cat-est">Carillas</a><a href="#cat-est">Blanqueamiento</a></div>
-        <div><h4 style="color:var(--c-gen)">Odontología general</h4><a href="#cat-gen">Limpieza dental</a><a href="#cat-gen">Periodoncia</a><a href="#cat-gen">Revisión general</a><a href="#cat-gen">Endodoncia</a></div>
-      </div>
-      <a class="all" href="#tratamientos">Ver todos los tratamientos →</a>
-    </div>
-  </div>
-  <div class="mega" id="mega-cli" hidden>
-    <div class="in">
-      <div class="zones">
-        <div><h4>Madrid este</h4><a href="#sede-a" style="font:700 18px var(--f-display);display:block;padding:10px 0 4px">DentistaExample Moratalaz</a><p>C/ del Pinar de Moratalaz, 23 · Metro Vinateros</p></div>
-        <div><h4>Madrid sur</h4><a href="#sede-v" style="font:700 18px var(--f-display);display:block;padding:10px 0 4px">DentistaExample Vallecas</a><p>Av. del Parque Sur, 41 · Metro Sierra de Guadalupe</p></div>
-      </div>
-      <a class="all" href="#clinicas">Ver mapa y cómo llegar →</a>
-    </div>
-  </div>
-
-  <div class="mob" id="mob" hidden>
-    <div class="in">
       <a href="#tratamientos">Tratamientos</a>
-      <a href="#clinicas">Clínicas y cómo llegar</a>
-      <a href="#historias">Pacientes</a>
-      <a href="#contacto">Contacto</a>
-      <button class="btn btn-wa" type="button" data-chat><svg class="ico"><use href="#i-wa"/></svg>Pedir cita por WhatsApp</button>
+      <a href="#nosotros">Por qué nosotros</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#clinicas">Clínicas</a>
+    </nav>
+    <a class="hphone" href="tel:+34910000100"><svg class="ico"><use href="#i-phone"/></svg>910 000 100</a>
+    <a class="btn btn-p cta" href="#cita">Pedir cita</a>
+    <button class="burger" type="button" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mob"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
+  <div class="mob" id="mob" hidden>
+    <div class="wrap">
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#nosotros">Por qué nosotros</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#clinicas">Clínicas y horario</a>
+      <a class="btn btn-o" href="tel:+34910000100"><svg class="ico"><use href="#i-phone"/></svg>Llamar al 910 000 100</a>
     </div>
   </div>
 </header>
 
-<section class="hero" id="inicio">
-  <div class="in">
+<main id="main">
+
+<!-- ============ Hero ============ -->
+<section class="hero" id="inicio" aria-labelledby="h-hero">
+  <img class="hero-bg" src="https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&amp;fit=crop&amp;w=1920&amp;q=70"
+       srcset="https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&amp;fit=crop&amp;w=900&amp;q=65 900w,
+               https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&amp;fit=crop&amp;w=1200&amp;q=70 1200w,
+               https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&amp;fit=crop&amp;w=1920&amp;q=70 1920w,
+               https://images.unsplash.com/photo-1609207825181-52d3214556dd?auto=format&amp;fit=crop&amp;w=2560&amp;q=60 2560w"
+       sizes="100vw" width="1920" height="1280" fetchpriority="high" decoding="async"
+       alt="Gabinete luminoso de la clínica, con pared de piedra y gran ventanal, donde un dentista atiende a un paciente">
+  <div class="wrap hero-in">
+    <div class="hero-txt">
+      <h1 class="hr" id="h-hero">Tu sonrisa, en las <em>mejores manos</em></h1>
+      <p class="hr">Clínica dental en Moratalaz y Vallecas. Tu primera consulta es gratis.</p>
+      <div class="hero-cta hr">
+        <a class="btn btn-p" href="#cita"><svg class="ico"><use href="#i-cal"/></svg>Pedir cita</a>
+        <button class="btn btn-glass" type="button" data-chat><svg class="ico"><use href="#i-wa"/></svg>Probar asistente</button>
+      </div>
+      <p class="proof hr"><span class="stars" aria-hidden="true">★</span> 4,8 en Google <span aria-hidden="true">·</span> +8.000 pacientes</p>
+    </div>
+  </div>
+
+  <aside class="hchat" aria-label="Ejemplo del asistente de citas por WhatsApp">
+    <div class="top">
+      <span class="av" aria-hidden="true">A</span>
+      <div><b>Ana · Asistente de citas</b><small>en línea</small></div>
+    </div>
+    <div class="thread" aria-hidden="true">
+      <div class="hm o">¿Tenéis hueco para una limpieza esta semana?</div>
+      <div class="hm i">¡Claro! Jueves a las 10:30 o viernes a las 17:00.</div>
+      <div class="hm o">El jueves 👍</div>
+      <div class="hm i">✅ Hecho. Te lo recuerdo el día antes.</div>
+    </div>
+    <p class="sr">Ejemplo: un paciente pide cita para una limpieza y el asistente se la confirma en segundos.</p>
+  </aside>
+</section>
+
+<!-- ============ Confianza ============ -->
+<section class="trust" aria-label="Ventajas principales">
+  <div class="wrap">
+    <ul>
+      <li class="rv"><span class="ti"><svg width="22" height="22"><use href="#i-check"/></svg></span><div><b>1ª consulta gratis</b><span>Diagnóstico y presupuesto cerrado</span></div></li>
+      <li class="rv" style="--d:.08s"><span class="ti"><svg width="22" height="22"><use href="#i-euro"/></svg></span><div><b>0 % de interés</b><span>Financiación hasta 24 meses</span></div></li>
+      <li class="rv" style="--d:.16s"><span class="ti"><svg width="22" height="22"><use href="#i-bolt"/></svg></span><div><b>Urgencias en el día</b><span>Lunes a viernes, hasta las 21 h</span></div></li>
+      <li class="rv" style="--d:.24s"><span class="ti"><svg width="22" height="22"><use href="#i-pin"/></svg></span><div><b>2 clínicas en Madrid</b><span>A 5 minutos del metro</span></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ Tratamientos ============ -->
+<section class="sec" id="tratamientos" aria-labelledby="h-trat">
+  <div class="wrap">
+    <div class="sh-row">
+      <div class="sh rv">
+        <span class="kick">Tratamientos</span>
+        <h2 id="h-trat">Todo lo que tu boca necesita, con el precio a la vista</h2>
+        <p class="lead">Publicamos nuestros precios y te damos el presupuesto por escrito antes de empezar. Sin sorpresas.</p>
+      </div>
+      <button class="link rv" type="button" data-chat>¿Dudas? Pregunta al asistente<svg class="ico"><use href="#i-arrow"/></svg></button>
+    </div>
+
+    <div class="cards">
+      <article class="card rv">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Maqueta de un implante dental con corona junto a dos dientes naturales"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-implant"/></svg></span>
+        <h3>Implantes dentales</h3>
+        <p>Implante de titanio y corona de zirconio a medida, con planificación digital y 10 años de garantía.</p>
+        <div class="price"><div><small>Implante + corona</small><strong>990 €</strong></div><em>o 25 €/mes*</em></div>
+      </article>
+      <article class="card rv" style="--d:.08s">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Mujer sonriente colocándose un alineador transparente"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-aligner"/></svg></span>
+        <h3>Ortodoncia invisible</h3>
+        <p>Alineadores transparentes y casi imperceptibles. Ves tu resultado final en 3D antes de empezar.</p>
+        <div class="price"><div><small>Desde</small><strong>2.490 €</strong></div><em>o 49 €/mes*</em></div>
+      </article>
+      <article class="card rv" style="--d:.16s">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Paciente sonriendo en el sillón mientras ve el diseño digital de su nueva sonrisa en una pantalla"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-spark"/></svg></span>
+        <h3>Estética dental</h3>
+        <p>Blanqueamiento profesional y carillas para una sonrisa natural, diseñada contigo y sin prisas.</p>
+        <div class="price"><div><small>Blanqueamiento</small><strong>180 €</strong></div><em>Carillas desde 120 €</em></div>
+      </article>
+      <article class="card rv">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1600170311833-c2cf5280ce49?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Escáner 3D de una arcada dental en una tableta, usado para diseñar la prótesis"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-bridge"/></svg></span>
+        <h3>Prótesis dentales</h3>
+        <p>Prótesis fijas sobre implantes o removibles, cómodas, estables y con un aspecto natural.</p>
+        <div class="price"><div><small>Desde</small><strong>590 €</strong></div><em>o 19 €/mes*</em></div>
+      </article>
+      <article class="card rv" style="--d:.08s">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Cepillos de dientes de bambú en un vaso de cristal sobre un fondo blanco"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-shield"/></svg></span>
+        <h3>Odontología general</h3>
+        <p>Revisiones, limpiezas, empastes y endodoncias para cuidar tu boca y la de tu familia todo el año.</p>
+        <div class="price"><div><small>Limpieza dental</small><strong>45 €</strong></div><em>Revisión gratis</em></div>
+      </article>
+      <article class="card rv" style="--d:.16s">
+        <figure class="ph"><img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70" srcset="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&amp;fit=crop&amp;w=480&amp;h=300&amp;q=70 480w, https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&amp;fit=crop&amp;w=640&amp;h=400&amp;q=70 640w, https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&amp;fit=crop&amp;w=900&amp;h=560&amp;q=70 900w" sizes="(min-width:980px) 370px, (min-width:640px) 46vw, 92vw" width="640" height="400" loading="lazy" decoding="async" alt="Dentista con mascarilla sosteniendo un espejo y una sonda dental"></figure><span class="ic" aria-hidden="true"><svg width="22" height="22"><use href="#i-bolt"/></svg></span>
+        <h3>Urgencias dentales</h3>
+        <p>¿Dolor, un diente roto o una infección? Te buscamos hueco el mismo día en la clínica más cercana.</p>
+        <div class="price"><div><small>Atención</small><strong>En el día</strong></div><a class="link" href="tel:+34910000100" style="font-size:14px">Llamar ahora</a></div>
+      </article>
+    </div>
+    <p class="fine">*Financiación sin intereses hasta 24 meses, sujeta a la aprobación de la entidad financiera.</p>
+  </div>
+</section>
+
+<!-- ============ Por qué nosotros ============ -->
+<section class="sec why" id="nosotros" aria-labelledby="h-why">
+  <div class="wrap why-grid">
+    <div class="why-photo rv">
+      <img src="https://images.unsplash.com/photo-1606811842243-af7e16970c1f?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=70"
+           srcset="https://images.unsplash.com/photo-1606811842243-af7e16970c1f?auto=format&amp;fit=crop&amp;w=600&amp;h=750&amp;q=70 600w,
+                   https://images.unsplash.com/photo-1606811842243-af7e16970c1f?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=70 900w"
+           sizes="(min-width:980px) 460px, 92vw" width="900" height="1125" loading="lazy" decoding="async"
+           alt="Un dentista explica el tratamiento a una paciente sentada en el sillón, ayudándose de una maqueta dental">
+      <img class="inset" src="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?auto=format&amp;fit=crop&amp;w=440&amp;h=330&amp;q=70" width="440" height="330" loading="lazy" decoding="async"
+           alt="Una doctora muestra a un paciente el escáner 3D de su boca en la pantalla">
+      <div class="badge"><b>Te explicamos cada paso</b>Con maqueta y escáner 3D, en tu primera visita gratuita.</div>
+    </div>
     <div>
-      <div class="crumbs">Inicio / Clínicas dentales en Moratalaz y Vallecas</div>
-      <div class="badges">
-        <span class="badge g">Clínica dental</span>
-        <span class="badge y">★ 4,8/5 · 1.240 reseñas</span>
+      <div class="rv">
+        <span class="kick">Por qué elegirnos</span>
+        <h2 id="h-why">Una clínica de barrio con estándares de clínica premium</h2>
+        <p class="lead">Llevamos más de quince años cuidando sonrisas en Madrid este y sur. Te explicamos cada paso, respetamos el precio pactado y te atendemos cuando te viene bien.</p>
       </div>
-      <h1>Tu sonrisa, <span>sin esperas</span> y con precio cerrado</h1>
-      <p class="sub">Dos clínicas en Madrid este y sur. Primera consulta gratis, financiación sin intereses y cita por WhatsApp en un minuto.</p>
-      <div class="prices">
-        <div class="price w"><div class="k">Implante + corona</div><div class="v">990€</div></div>
-        <div class="price g"><div class="k">Financiado desde</div><div class="v">25€<small>/mes*</small></div></div>
-        <div class="price o"><div class="k">1ª consulta</div><div class="v">Gratuita</div></div>
+      <div class="stats">
+        <div class="stat rv"><strong data-count="15">15</strong><span>años cuidando sonrisas en Madrid</span></div>
+        <div class="stat rv" style="--d:.08s"><strong data-count="8000" data-prefix="+">+8.000</strong><span>pacientes atendidos</span></div>
+        <div class="stat rv" style="--d:.16s"><strong data-count="4.8" data-dec="1">4,8</strong><span>de valoración media en 1.240 reseñas</span></div>
+        <div class="stat rv" style="--d:.24s"><strong data-count="10" data-suffix=" años">10 años</strong><span>de garantía en implantes</span></div>
       </div>
-      <div class="actions">
-        <button class="btn btn-g" type="button" data-form><svg class="ico"><use href="#i-cal"/></svg>Pedir cita</button>
-        <a class="btn btn-line" href="#contacto"><svg class="ico"><use href="#i-phone"/></svg>910 000 100</a>
-      </div>
-    </div>
-
-    <aside class="assistant" aria-label="Ejemplo del asistente de citas">
-      <span class="float-tag">Responde 24/7</span>
-      <div class="top">
-        <span class="av"><svg width="22" height="22"><use href="#i-wa"/></svg></span>
-        <div><b>Asistente de citas DentistaExample</b><small>● en línea ahora</small></div>
-      </div>
-      <div class="thread">
-        <div class="o">Hola, ¿tenéis hueco para una limpieza esta semana?</div>
-        <div class="i">¡Claro! En Vallecas tengo jueves a las 10:30 o viernes a las 17:00. ¿Cuál prefieres?</div>
-        <div class="o">El jueves 👍</div>
-        <div class="i">✅ Hecho. Te recordaré tu cita el día antes.</div>
-      </div>
-      <button class="btn btn-wa" type="button" data-chat><svg class="ico"><use href="#i-wa"/></svg>Probar el asistente</button>
-      <p class="note">Elige día y hora sin llamar.</p>
-    </aside>
-  </div>
-</section>
-
-<div class="trust">
-  <div class="in">
-    <div><span class="ti"><svg width="22" height="22"><use href="#i-check"/></svg></span><p><b>1ª consulta gratis</b><span>Diagnóstico y presupuesto</span></p></div>
-    <div><span class="ti"><svg width="22" height="22"><use href="#i-cal"/></svg></span><p><b>Hasta 24 meses</b><span>Financiación sin intereses</span></p></div>
-    <div><span class="ti"><svg width="22" height="22"><use href="#i-clock"/></svg></span><p><b>Urgencias en el día</b><span>L–V de 10:00 a 21:00</span></p></div>
-    <div><span class="ti"><svg width="22" height="22"><use href="#i-pin"/></svg></span><p><b>2 clínicas</b><span>Moratalaz y Vallecas</span></p></div>
-  </div>
-</div>
-
-<section class="blk" id="tratamientos">
-  <div class="in">
-    <div class="sh">
-      <span class="kick">Tratamientos</span>
-      <h2>Precios claros desde el primer día</h2>
-      <p>Cada tratamiento con su precio publicado y la opción de pagarlo a plazos. Sin letra pequeña.</p>
-    </div>
-    <div class="cats">
-      <article class="cat" id="cat-impl" style="--cc:var(--c-impl)"><h3><span class="dot"><svg width="18" height="18"><use href="#i-shell"/></svg></span>Implantes</h3>
-        <ul><li><b>Implante + corona de zirconio</b><span>990€</span></li><li><b>Implantes cigomáticos</b><span><small>desde</small> 3.900€</span></li></ul>
-        <p class="fin">Financiado desde 25 €/mes*</p></article>
-      <article class="cat" id="cat-prot" style="--cc:var(--c-prot)"><h3><span class="dot"><svg width="18" height="18"><use href="#i-shell"/></svg></span>Prótesis</h3>
-        <ul><li><b>Prótesis fija</b><span><small>desde</small> 2.400€</span></li><li><b>Prótesis removible</b><span><small>desde</small> 590€</span></li></ul>
-        <p class="fin">Financiado desde 19 €/mes*</p></article>
-      <article class="cat" id="cat-orto" style="--cc:var(--c-orto)"><h3><span class="dot"><svg width="18" height="18"><use href="#i-shell"/></svg></span>Ortodoncia</h3>
-        <ul><li><b>Ortodoncia invisible</b><span><small>desde</small> 2.490€</span></li><li><b>Brackets</b><span><small>desde</small> 1.490€</span></li></ul>
-        <p class="fin">Financiado desde 49 €/mes*</p></article>
-      <article class="cat" id="cat-est" style="--cc:var(--c-est)"><h3><span class="dot"><svg width="18" height="18"><use href="#i-shell"/></svg></span>Estética dental</h3>
-        <ul><li><b>Carillas</b><span><small>desde</small> 120€<small>/pieza</small></span></li><li><b>Blanqueamiento</b><span>180€</span></li></ul>
-        <p class="fin">Valoración estética gratuita</p></article>
-      <article class="cat" id="cat-gen" style="--cc:var(--c-gen)"><h3><span class="dot"><svg width="18" height="18"><use href="#i-shell"/></svg></span>Odontología general</h3>
-        <ul><li><b>Limpieza dental</b><span>45€</span></li><li><b>Periodoncia</b><span><small>desde</small> 90€</span></li><li><b>Revisión general</b><span>Gratis</span></li><li><b>Endodoncia</b><span><small>desde</small> 150€</span></li></ul></article>
-      <article class="cat promo"><h3>¿No sabes qué tratamiento necesitas?</h3><p>Ven a una primera consulta gratuita. Te hacemos el diagnóstico y te damos un presupuesto cerrado, sin compromiso.</p><button class="btn btn-g" type="button" data-form><svg class="ico"><use href="#i-cal"/></svg>Pedir cita gratuita</button></article>
+      <ul class="adv">
+        <li class="rv"><span class="ti"><svg width="20" height="20"><use href="#i-doc"/></svg></span><div><b>Precio cerrado por escrito</b><span>El presupuesto que aceptas es el que pagas.</span></div></li>
+        <li class="rv" style="--d:.08s"><span class="ti"><svg width="20" height="20"><use href="#i-euro"/></svg></span><div><b>Financiación al 0 %</b><span>Hasta 24 meses, sin intereses ni comisiones.</span></div></li>
+        <li class="rv"><span class="ti"><svg width="20" height="20"><use href="#i-scan"/></svg></span><div><b>Tecnología digital</b><span>Escáner intraoral 3D y radiografía de baja dosis.</span></div></li>
+        <li class="rv" style="--d:.08s"><span class="ti"><svg width="20" height="20"><use href="#i-moon"/></svg></span><div><b>Abierto hasta las 21 h</b><span>Cita de tarde para que no pierdas horas de trabajo.</span></div></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="blk feat">
-  <div class="in">
-    <div class="sh">
-      <span class="kick">Tratamiento destacado</span>
-      <h2>Implante + corona de zirconio</h2>
+<!-- ============ Equipo ============ -->
+<section class="sec" id="equipo" aria-labelledby="h-team">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kick">Nuestro equipo</span>
+      <h2 id="h-team">Las personas que van a cuidar de tu sonrisa</h2>
+      <p class="lead">Odontólogos colegiados y especializados, que te atienden siempre en tu idioma y sin prisas.</p>
     </div>
-    <div class="feat-grid">
-      <div>
-        <div class="tabs" role="tablist">
-          <button type="button" role="tab" aria-selected="true" data-tab="p1">¿Qué es?</button>
-          <button type="button" role="tab" aria-selected="false" data-tab="p2">Beneficios</button>
-          <button type="button" role="tab" aria-selected="false" data-tab="p3">Proceso</button>
-        </div>
-        <div class="panel" id="p1"><p>Un implante dental es un pequeño tornillo de titanio que sustituye la raíz de un diente perdido. Sobre él colocamos una corona de zirconio hecha a medida, del mismo tono que tus dientes. El hueso se une al implante en un proceso natural de 3 a 6 meses, y el resultado es un diente fijo que muerdes y cuidas como uno propio.</p></div>
-        <div class="panel" id="p2" hidden><ul>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>Diente fijo, sin ganchos ni adhesivos</li>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>No hace falta tallar los dientes vecinos</li>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>Evita que el hueso se pierda con los años</li>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>Zirconio: resistente y de aspecto natural</li>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>Planificación digital con escáner 3D</li>
-          <li><svg width="18" height="18"><use href="#i-check"/></svg>Garantía de 10 años en el implante</li>
-        </ul></div>
-        <div class="panel" id="p3" hidden><ol>
-          <li><div><b>Consulta y escáner 3D</b><span>Gratis. Vemos el hueso disponible y te damos el presupuesto cerrado.</span></div></li>
-          <li><div><b>Colocación del implante</b><span>Con anestesia local, en una sesión de unos 45 minutos.</span></div></li>
-          <li><div><b>Integración</b><span>De 3 a 6 meses. Llevas un diente provisional mientras tanto.</span></div></li>
-          <li><div><b>Corona definitiva</b><span>Colocamos la corona de zirconio hecha a medida.</span></div></li>
-        </ol></div>
-      </div>
-      <aside class="side">
-        <div class="card-g">
-          <h3>Primera consulta gratuita</h3>
-          <p>Sin compromiso. Tu especialista te explica todo lo que necesitas saber.</p>
-          <button class="btn btn-w" type="button" data-form><svg class="ico"><use href="#i-cal"/></svg>Pedir cita</button>
-          <a class="btn btn-line" href="#contacto"><svg class="ico"><use href="#i-phone"/></svg>910 000 100</a>
-        </div>
-        <div class="card-p">
-          <h4>Precio del tratamiento</h4>
-          <div class="pp">
-            <div><div class="k">Precio total</div><div class="v">990<small>€</small></div><div class="s">pago único</div></div>
-            <div class="g"><div class="k">Financiado</div><div class="v">25<small>€/mes*</small></div><div class="s">en 24 meses</div></div>
-          </div>
-          <p class="fine">*Financiación sin intereses sujeta a aprobación de la entidad financiera.</p>
-        </div>
-      </aside>
+    <div class="team">
+      <article class="doc rv">
+        <figure><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;crop=faces&amp;w=600&amp;h=750&amp;q=70" width="600" height="750" loading="lazy" decoding="async" alt="Retrato de la Dra. Lucía Martín, sonriente, con uniforme sanitario verde azulado y los brazos cruzados"></figure>
+        <h3>Dra. Lucía Martín</h3>
+        <p class="role">Directora médica · Implantología</p>
+        <p>Más de 15 años colocando implantes. Planifica cada caso en 3D antes de entrar en quirófano.</p>
+        <span class="col">Nº col. 28/00000</span>
+      </article>
+      <article class="doc rv" style="--d:.08s">
+        <figure><img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;crop=faces&amp;w=600&amp;h=750&amp;q=70" width="600" height="750" loading="lazy" decoding="async" alt="Retrato del Dr. Daniel Romero, con gafas y bata blanca, de brazos cruzados"></figure>
+        <h3>Dr. Daniel Romero</h3>
+        <p class="role">Ortodoncia</p>
+        <p>Especialista en ortodoncia invisible para adultos y adolescentes. Te enseña el resultado antes de empezar.</p>
+        <span class="col">Nº col. 28/00001</span>
+      </article>
+      <article class="doc rv" style="--d:.16s">
+        <figure><img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&amp;fit=crop&amp;crop=faces&amp;w=600&amp;h=750&amp;q=70" width="600" height="750" loading="lazy" decoding="async" alt="Retrato de la Dra. Elena Navarro, sonriente, con traje claro y gafas"></figure>
+        <h3>Dra. Elena Navarro</h3>
+        <p class="role">Estética dental</p>
+        <p>Diseña carillas y blanqueamientos que respetan la forma natural de tus dientes.</p>
+        <span class="col">Nº col. 28/00002</span>
+      </article>
+      <article class="doc rv" style="--d:.24s">
+        <figure><img src="https://images.unsplash.com/photo-1622902046580-2b47f47f5471?auto=format&amp;fit=crop&amp;crop=faces&amp;w=600&amp;h=750&amp;q=70" width="600" height="750" loading="lazy" decoding="async" alt="Retrato del Dr. Andrés Castillo, sonriente, con bata blanca y los brazos cruzados"></figure>
+        <h3>Dr. Andrés Castillo</h3>
+        <p class="role">Odontología general y urgencias</p>
+        <p>Tu dentista de cabecera: revisiones, limpiezas y urgencias del día con trato cercano.</p>
+        <span class="col">Nº col. 28/00003</span>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="blk" id="historias">
-  <div class="in">
-    <div class="sh">
-      <span class="kick">Historias de pacientes</span>
-      <h2>Personas como tú que volvieron a sonreír</h2>
+<!-- ============ Opiniones ============ -->
+<section class="sec reviews" id="opiniones" aria-labelledby="h-rev">
+  <div class="wrap">
+    <div class="sh-row">
+      <div class="sh rv">
+        <span class="kick">Opiniones</span>
+        <h2 id="h-rev">Personas como tú que volvieron a sonreír</h2>
+      </div>
+      <div class="score rv"><strong>4,8</strong><div><span class="stars" aria-hidden="true">★★★★★</span><span>1.240 reseñas en Google</span></div></div>
     </div>
-    <div class="stories">
-      <article class="story"><div class="ban"><span class="q">“</span><span class="tr">Volví a comer de todo</span><span class="who">ROSA</span></div>
-        <div class="body"><span class="stars">★★★★★</span><b>Rosa · Implantes</b><p>Llevaba años sin poder masticar bien. En tres meses tenía mis dientes fijos y sin dolor.</p></div></article>
-      <article class="story"><div class="ban" style="background:var(--navy-2)"><span class="q">“</span><span class="tr">Pedí cita un domingo</span><span class="who" style="background:var(--green)">JAVIER</span></div>
-        <div class="body"><span class="stars">★★★★★</span><b>Javier · Limpieza y revisión</b><p>Escribí por WhatsApp un domingo por la noche y el martes ya estaba en la consulta. Muy cómodo.</p></div></article>
-      <article class="story"><div class="ban" style="background:var(--c-orto)"><span class="q">“</span><span class="tr">Nadie notó mi ortodoncia</span><span class="who">LUCÍA</span></div>
-        <div class="body"><span class="stars">★★★★★</span><b>Lucía · Ortodoncia invisible</b><p>Me explicaron cada fase y el precio fue el mismo que me dijeron el primer día.</p></div></article>
+    <div class="quotes">
+      <figure class="quote rv">
+        <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+        <blockquote>«Llevaba años sin poder masticar bien. En tres meses tenía mis dientes fijos y sin dolor. Volví a comer de todo.»</blockquote>
+        <figcaption><span class="av" aria-hidden="true">RM</span><div><b>Rosa M.</b><span>Implantes · Moratalaz</span></div></figcaption>
+      </figure>
+      <figure class="quote rv" style="--d:.08s">
+        <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+        <blockquote>«Escribí por WhatsApp un domingo por la noche y el martes ya estaba en la consulta. Comodísimo.»</blockquote>
+        <figcaption><span class="av" aria-hidden="true">JP</span><div><b>Javier P.</b><span>Limpieza y revisión · Vallecas</span></div></figcaption>
+      </figure>
+      <figure class="quote rv" style="--d:.16s">
+        <span class="stars" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+        <blockquote>«Me explicaron cada fase y el precio final fue exactamente el que me dijeron el primer día. Nadie notó mi ortodoncia.»</blockquote>
+        <figcaption><span class="av" aria-hidden="true">CL</span><div><b>Carmen L.</b><span>Ortodoncia invisible · Moratalaz</span></div></figcaption>
+      </figure>
     </div>
   </div>
 </section>
 
-<section class="blk" id="clinicas" style="background:var(--soft)">
-  <div class="in">
-    <div class="finder">
-      <div>
-        <h2><svg width="30" height="30" style="flex:none;margin-top:3px"><use href="#i-pin"/></svg>Encuentra tu clínica más cercana</h2>
-        <p>Escribe tu barrio o código postal y te mostramos cómo llegar.</p>
-      </div>
-      <form id="finder">
-        <div class="search">
-          <input id="q" aria-label="Barrio o código postal" placeholder="Ej.: 28030 o Moratalaz" autocomplete="off">
-          <button class="btn btn-g" type="submit">Buscar →</button>
-        </div>
-        <p class="res" id="res" aria-live="polite"></p>
-      </form>
+<!-- ============ Preguntas frecuentes ============ -->
+<section class="sec" id="preguntas" aria-labelledby="h-faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="kick">Preguntas frecuentes</span>
+      <h2 id="h-faq">Lo que nos preguntan antes de la primera visita</h2>
+      <p class="lead">¿No encuentras tu respuesta? Escríbenos y te contestamos al momento.</p>
+      <button class="btn btn-o" type="button" data-chat><svg class="ico" style="color:var(--wa)"><use href="#i-wa"/></svg>Preguntar por WhatsApp</button>
     </div>
+    <div class="faq rv">
+      <details open><summary>¿La primera consulta es gratis?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>Sí. Incluye revisión, diagnóstico digital y un presupuesto cerrado por escrito, sin compromiso de empezar el tratamiento.</p></details>
+      <details><summary>¿Cuánto cuesta un implante dental?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>El implante con corona de zirconio cuesta 990 € en total, o desde 25 € al mes en 24 meses sin intereses. El precio que aceptas es el que pagas.</p></details>
+      <details><summary>¿Puedo pedir o cambiar la cita por WhatsApp?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>Sí. Nuestro asistente ve la agenda de las dos clínicas, te ofrece los primeros huecos libres y te envía un recordatorio el día anterior. Funciona las 24 horas.</p></details>
+      <details><summary>¿Atendéis urgencias?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>Sí. Si tienes dolor, un diente roto o una infección, te atendemos el mismo día en horario de clínica. Llámanos al 910 000 100.</p></details>
+      <details><summary>¿Puedo financiar el tratamiento?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>Sí, hasta 24 meses sin intereses en tratamientos a partir de 300 €, sujeto a la aprobación de la entidad financiera.</p></details>
+      <details><summary>¿Duele ponerse un implante?<span class="pm" aria-hidden="true"><svg width="16" height="16"><use href="#i-plus"/></svg></span></summary><p>Se coloca con anestesia local en una sesión de unos 45 minutos. Las molestias de los días siguientes suelen controlarse con analgésicos habituales.</p></details>
+    </div>
+  </div>
+</section>
 
-    <div class="sh">
-      <span class="kick">Cómo llegar</span>
-      <h2>Dos clínicas, a 5 minutos del metro</h2>
+<!-- ============ Clínicas ============ -->
+<section class="sec clinics" id="clinicas" aria-labelledby="h-cli">
+  <div class="wrap">
+    <div class="sh rv">
+      <span class="kick">Ubicación y horario</span>
+      <h2 id="h-cli">Dos clínicas, a 5 minutos del metro</h2>
     </div>
     <div class="sedes">
-      <article class="sede" id="sede-a">
-        <h3>DentistaExample Moratalaz</h3>
-        <span class="open"><svg class="ico"><use href="#i-clock"/></svg>Lun–Vie: 10–14 y 16–21 h</span>
-        <div class="map" role="img" aria-label="Mapa: la clínica está en la calle del Pinar de Moratalaz, a 5 minutos a pie del metro Vinateros">
-          <svg viewBox="0 0 400 230">
-            <rect class="blk" width="400" height="230"/>
-            <rect class="park" x="334" y="128" width="66" height="54" rx="4"/>
-            <path class="road" stroke-width="12" d="M0 55H400M0 190H400M90 0V230M320 0V230"/>
-            <path class="main" stroke-width="18" d="M0 115H400M200 0V230"/>
-            <text class="st" x="16" y="106">C/ del Pinar de Moratalaz</text>
-            <text class="st" transform="translate(222 100) rotate(-90)">Av. de Moratalaz</text>
-            <text class="st" x="344" y="160">Parque</text>
-            <path class="walk" d="M200 180V115H320V92"/>
-            <circle class="met" cx="200" cy="182" r="12"/><text class="wt" x="200" y="186" text-anchor="middle">M</text>
-            <text class="st" x="106" y="176">Vinateros L9</text>
-            <rect class="tag" x="132" y="58" width="172" height="40" rx="8"/>
-            <text class="tag-t" x="143" y="75">DentistaExample Moratalaz</text>
-            <text class="tag-s" x="143" y="90">5 min a pie</text>
-            <g transform="translate(320 92)"><path class="pk" d="M0 0C-10-12-14-18-14-26a14 14 0 1 1 28 0c0 8-4 14-14 26z"/><circle class="pk-in" cx="0" cy="-26" r="5"/></g>
-          </svg>
-        </div>
-        <div><div class="addr" id="addr-a">C/ del Pinar de Moratalaz, 23 · 28030 Madrid</div><span>Esquina con Av. de Moratalaz, frente al parque</span></div>
-        <ul class="route">
-          <li><span class="ri m">M</span><div><b>Metro Vinateros · Línea 9</b><span>Sube por Av. de Moratalaz y gira a la derecha. 5 min a pie.</span></div></li>
-          <li><span class="ri b">B</span><div><b>Autobús 20, 30 y 32</b><span>Parada Pinar de Moratalaz, en la puerta.</span></div></li>
-          <li><span class="ri p">P</span><div><b>Aparcamiento</b><span>Plazas libres en las calles laterales.</span></div></li>
-        </ul>
-        <div class="row">
-          <button class="btn btn-g" type="button" data-chat data-sede="a">Pedir cita aquí</button>
-          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Metro+Vinateros+Madrid" target="_blank" rel="noopener">Ver en Google Maps</a>
-          <button class="btn btn-line" type="button" data-copy="addr-a">Copiar dirección</button>
+      <article class="sede rv" id="sede-a">
+        <iframe title="Mapa de la zona de DentistaExample Moratalaz, junto al metro Vinateros" src="https://maps.google.com/maps?q=Metro%20Vinateros%2C%20Madrid&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="body">
+          <div><h3>DentistaExample Moratalaz</h3><p class="addr">C/ del Pinar de Moratalaz, 23 · 28030 Madrid</p></div>
+          <ul class="route">
+            <li><span class="ri m" aria-hidden="true">M</span>Metro Vinateros (L9) · 5 min a pie</li>
+            <li><span class="ri b" aria-hidden="true">B</span>Autobuses 20, 30 y 32 · parada en la puerta</li>
+          </ul>
+          <dl class="hours"><dt>Lunes a viernes</dt><dd>10:00–14:00 · 16:00–21:00</dd><dt>Fin de semana</dt><dd>Cerrado · cita por WhatsApp 24 h</dd></dl>
+          <div class="row">
+            <button class="btn btn-p" type="button" data-chat data-sede="a">Pedir cita aquí</button>
+            <a class="btn btn-o" href="https://www.google.com/maps/dir/?api=1&amp;destination=Metro+Vinateros+Madrid" target="_blank" rel="noopener">Cómo llegar<span class="sr"> (se abre en Google Maps)</span></a>
+          </div>
         </div>
       </article>
-
-      <article class="sede" id="sede-v">
-        <h3>DentistaExample Vallecas</h3>
-        <span class="open"><svg class="ico"><use href="#i-clock"/></svg>Lun–Vie: 10–14 y 16–21 h</span>
-        <div class="map" role="img" aria-label="Mapa: la clínica está en la avenida del Parque Sur, a 5 minutos a pie del metro Sierra de Guadalupe y de Cercanías Vallecas">
-          <svg viewBox="0 0 400 230">
-            <rect class="blk" width="400" height="230"/>
-            <rect class="park" x="334" y="128" width="66" height="54" rx="4"/>
-            <path class="road" stroke-width="12" d="M0 55H400M0 190H400M90 0V230M320 0V230"/>
-            <path class="main" stroke-width="18" d="M0 115H400M200 0V230"/>
-            <path d="M0 214L400 168" stroke="#7A5BB5" stroke-width="4" stroke-dasharray="14 6" fill="none"/>
-            <text class="st" x="24" y="106">Av. del Parque Sur</text>
-            <text class="st" transform="translate(222 100) rotate(-90)">C/ Real de Arganda</text>
-            <text class="st" x="344" y="160">Parque</text>
-            <path class="walk" d="M200 180V115H320V92"/>
-            <circle class="met" cx="186" cy="182" r="12"/><text class="wt" x="186" y="186" text-anchor="middle">M</text>
-            <circle class="rail" cx="214" cy="182" r="12"/><text class="wt" x="214" y="186" text-anchor="middle">C</text>
-            <text class="st" x="76" y="176">Sierra de Guadalupe</text>
-            <rect class="tag" x="132" y="58" width="172" height="40" rx="8"/>
-            <text class="tag-t" x="143" y="75">DentistaExample Vallecas</text>
-            <text class="tag-s" x="143" y="90">5 min a pie</text>
-            <g transform="translate(320 92)"><path class="pk" d="M0 0C-10-12-14-18-14-26a14 14 0 1 1 28 0c0 8-4 14-14 26z"/><circle class="pk-in" cx="0" cy="-26" r="5"/></g>
-          </svg>
-        </div>
-        <div><div class="addr" id="addr-v">Av. del Parque Sur, 41 · 28031 Madrid</div><span>Esquina con C/ de los Tilos, frente al parque</span></div>
-        <ul class="route">
-          <li><span class="ri m">M</span><div><b>Metro Sierra de Guadalupe · Línea 1</b><span>Sube por C/ Real de Arganda y gira a la derecha. 5 min a pie.</span></div></li>
-          <li><span class="ri r">C</span><div><b>Cercanías Vallecas · C2 y C7</b><span>Comparte estación con el metro.</span></div></li>
-          <li><span class="ri b">B</span><div><b>Autobús 54, 58 y 103</b><span>Parada Parque Sur, en la puerta.</span></div></li>
-        </ul>
-        <div class="row">
-          <button class="btn btn-g" type="button" data-chat data-sede="v">Pedir cita aquí</button>
-          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Metro+Sierra+de+Guadalupe+Madrid" target="_blank" rel="noopener">Ver en Google Maps</a>
-          <button class="btn btn-line" type="button" data-copy="addr-v">Copiar dirección</button>
+      <article class="sede rv" id="sede-v" style="--d:.08s">
+        <iframe title="Mapa de la zona de DentistaExample Vallecas, junto al metro Sierra de Guadalupe" src="https://maps.google.com/maps?q=Metro%20Sierra%20de%20Guadalupe%2C%20Madrid&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="body">
+          <div><h3>DentistaExample Vallecas</h3><p class="addr">Av. del Parque Sur, 41 · 28031 Madrid</p></div>
+          <ul class="route">
+            <li><span class="ri m" aria-hidden="true">M</span>Metro Sierra de Guadalupe (L1) · 5 min a pie</li>
+            <li><span class="ri c" aria-hidden="true">C</span>Cercanías Vallecas (C2 y C7) · misma estación</li>
+          </ul>
+          <dl class="hours"><dt>Lunes a viernes</dt><dd>10:00–14:00 · 16:00–21:00</dd><dt>Fin de semana</dt><dd>Cerrado · cita por WhatsApp 24 h</dd></dl>
+          <div class="row">
+            <button class="btn btn-p" type="button" data-chat data-sede="v">Pedir cita aquí</button>
+            <a class="btn btn-o" href="https://www.google.com/maps/dir/?api=1&amp;destination=Metro+Sierra+de+Guadalupe+Madrid" target="_blank" rel="noopener">Cómo llegar<span class="sr"> (se abre en Google Maps)</span></a>
+          </div>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="blk">
-  <div class="in">
-    <div class="sh">
-      <span class="kick">Preguntas frecuentes</span>
-      <h2>Antes de tu primera visita</h2>
+<!-- ============ Cita ============ -->
+<section class="sec book" id="cita" aria-labelledby="h-cita">
+  <div class="wrap book-grid">
+    <div class="rv">
+      <span class="kick">Pide tu cita</span>
+      <h2 id="h-cita">Tu primera consulta es gratuita</h2>
+      <p class="lead">Déjanos tus datos y te llamamos en menos de 24 horas hábiles para darte cita. Si lo prefieres, elige tú el día y la hora con nuestro asistente.</p>
+      <ul class="ways">
+        <li><span class="ti"><svg width="22" height="22"><use href="#i-wa"/></svg></span><div><b>WhatsApp, 24 horas</b><span>Reserva, cambia o cancela en un minuto.</span><br><button class="btn btn-wa" type="button" data-chat><svg class="ico"><use href="#i-wa"/></svg>Abrir el asistente</button></div></li>
+        <li><span class="ti"><svg width="22" height="22"><use href="#i-phone"/></svg></span><div><b>Teléfono</b><a href="tel:+34910000100">910 000 100</a><span> · L–V de 10:00 a 21:00</span></div></li>
+        <li><span class="ti"><svg width="22" height="22"><use href="#i-mail"/></svg></span><div><b>Email</b><a href="mailto:hola@dentistaexample.es">hola@dentistaexample.es</a></div></li>
+      </ul>
     </div>
-    <div class="faq">
-      <details open><summary>¿Cuánto cuesta un implante dental?<svg width="20" height="20"><use href="#i-down"/></svg></summary><p>El implante con corona de zirconio cuesta 990 € en total, o desde 25 € al mes con financiación. El precio incluye el implante, la corona y las revisiones del primer año.</p></details>
-      <details><summary>¿La primera consulta es gratis?<svg width="20" height="20"><use href="#i-down"/></svg></summary><p>Sí. Incluye revisión, diagnóstico y presupuesto cerrado, sin compromiso de empezar el tratamiento.</p></details>
-      <details><summary>¿Puedo pedir o cambiar la cita por WhatsApp?<svg width="20" height="20"><use href="#i-down"/></svg></summary><p>Sí. Nuestro asistente ve la agenda de las dos clínicas y te reserva al momento, a cualquier hora. El día antes te recuerda la cita y puedes confirmarla o cambiarla con un toque.</p></details>
-      <details><summary>¿Atendéis urgencias?<svg width="20" height="20"><use href="#i-down"/></svg></summary><p>Sí. Si tienes dolor o se te ha roto un diente, te buscamos hueco el mismo día en la clínica con disponibilidad.</p></details>
+
+    <div class="formcard rv" style="--d:.1s">
+      <form id="cform" novalidate>
+        <h3>Solicita tu cita</h3>
+        <p class="sub">Los campos con * son obligatorios.</p>
+        <div class="fgrid">
+          <div class="f"><label for="f-n">Nombre y apellidos *</label><input id="f-n" name="n" autocomplete="name" required aria-describedby="e-n"><span class="msg" id="e-n"></span></div>
+          <div class="f"><label for="f-t">Teléfono *</label><input id="f-t" name="t" type="tel" inputmode="tel" autocomplete="tel" placeholder="600 000 000" required aria-describedby="e-t"><span class="msg" id="e-t"></span></div>
+          <div class="f"><label for="f-r">Tratamiento</label>
+            <select id="f-r" name="r"><option>Primera consulta / revisión</option><option>Implantes</option><option>Ortodoncia invisible</option><option>Estética dental</option><option>Prótesis</option><option>Limpieza dental</option><option>Urgencia</option></select></div>
+          <div class="f"><label for="f-s">Clínica</label>
+            <select id="f-s" name="s"><option>Moratalaz</option><option>Vallecas</option><option>Me da igual</option></select></div>
+          <fieldset class="f full"><legend>¿Cuándo te viene mejor que te llamemos?</legend>
+            <div class="chips">
+              <label><input type="radio" name="h" value="por la mañana" checked><span>Mañana</span></label>
+              <label><input type="radio" name="h" value="por la tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="h" value="a cualquier hora"><span>Indiferente</span></label>
+            </div>
+          </fieldset>
+          <label class="chk"><input type="checkbox" id="f-c" name="c" aria-describedby="e-c"><span>He leído y acepto la <a href="#cita">política de privacidad</a>. Usaremos tus datos solo para gestionar tu cita. <span class="msg" id="e-c" style="display:block;color:#B3361F"></span></span></label>
+        </div>
+        <button class="btn btn-p send" type="submit"><svg class="ico"><use href="#i-cal"/></svg>Solicitar cita gratuita</button>
+        <p class="note">No incluyas información médica en este formulario.</p>
+      </form>
+      <div class="okbox" id="okbox" hidden tabindex="-1">
+        <span class="tick"><svg width="30" height="30"><use href="#i-check"/></svg></span>
+        <h3 id="ok-t">¡Gracias!</h3>
+        <p id="ok-p"></p>
+        <button class="btn btn-o" type="button" id="again">Enviar otra solicitud</button>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="contact-hero" id="contacto">
-  <div class="in">
-    <h2>Contacta con nosotros</h2>
-    <p>Rellena el formulario y te llamamos, escríbenos por WhatsApp o llámanos directamente.</p>
-  </div>
-  <svg class="curve" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60C300 10 1140 10 1440 60z" fill="#fff"/></svg>
-</section>
-<section class="contact">
-  <div class="in">
-    <div class="formcard" id="formcard"></div>
-    <div class="info">
-      <h3>Información de contacto</h3>
-      <div class="irow"><span class="ii"><svg width="24" height="24"><use href="#i-phone"/></svg></span><div><b>Teléfono</b><span>910 000 100</span><small>Lun–Vie de 10:00 a 21:00</small></div></div>
-      <div class="irow"><span class="ii"><svg width="24" height="24"><use href="#i-wa"/></svg></span><div><b>WhatsApp</b><span>Cita al instante, 24/7</span><small>Atendido por nuestro asistente</small></div></div>
-      <div class="irow"><span class="ii"><svg width="24" height="24"><use href="#i-mail"/></svg></span><div><b>Email</b><span>hola@dentistaexample.es</span><small>Respuesta en menos de 24 h</small></div></div>
-      <div class="irow"><span class="ii"><svg width="24" height="24"><use href="#i-pin"/></svg></span><div><b>Clínicas</b><span>Moratalaz y Vallecas</span><small><a href="#clinicas" style="text-decoration:underline">Ver cómo llegar</a></small></div></div>
-    </div>
-  </div>
-</section>
+</main>
 
-<footer>
-  <div class="in">
+<!-- ============ Pie ============ -->
+<footer class="foot">
+  <div class="wrap foot-grid">
     <div>
-      <div class="logo"><span class="shell" style="background:var(--navy-2)"><svg width="24" height="24" style="color:#5FD8B2"><use href="#i-shell"/></svg></span><span><b style="color:#fff">Dentista<span style="color:#5FD8B2">Example</span></b><small>Clínica dental</small></span></div>
-      <p style="margin-top:20px">Clínicas dentales de barrio en Moratalaz y Vallecas, con precios publicados y cita al instante.</p>
-      <div class="fsoc"><span><svg><use href="#i-fb"/></svg></span><span><svg><use href="#i-ig"/></svg></span><span><svg><use href="#i-tt"/></svg></span><span><svg><use href="#i-yt"/></svg></span></div>
-      <div class="stats"><div><b>★ 4,8</b><span>Google</span></div><div><b>2</b><span>Clínicas</span></div><div><b>+8.000</b><span>Pacientes</span></div></div>
+      <a class="logo" href="#inicio" aria-label="DentistaExample, volver al inicio"><span class="mk" aria-hidden="true"><svg width="22" height="22"><use href="#i-tooth"/></svg></span><span><b>DentistaExample</b><small>Clínica dental</small></span></a>
+      <p>Clínicas dentales en Moratalaz y Vallecas, con precios publicados, trato cercano y cita al instante.</p>
     </div>
     <div>
-      <h4>Nuestras clínicas</h4>
-      <div class="flist"><a href="#sede-a">Moratalaz · C/ del Pinar de Moratalaz, 23</a><a href="#sede-v">Vallecas · Av. del Parque Sur, 41</a><a href="#tratamientos">Tratamientos y precios</a><a href="#historias">Historias de pacientes</a></div>
+      <h2>Tratamientos</h2>
+      <ul><li><a href="#tratamientos">Implantes dentales</a></li><li><a href="#tratamientos">Ortodoncia invisible</a></li><li><a href="#tratamientos">Estética dental</a></li><li><a href="#tratamientos">Urgencias</a></li></ul>
     </div>
     <div>
-      <h4>Contacto</h4>
-      <div class="fcont"><span><svg class="ico"><use href="#i-phone"/></svg>910 000 100</span><span><svg class="ico"><use href="#i-mail"/></svg>hola@dentistaexample.es</span>
-        <button class="btn btn-g" type="button" data-form style="margin-top:8px"><svg class="ico"><use href="#i-cal"/></svg>Pedir cita gratuita</button></div>
+      <h2>Clínicas</h2>
+      <ul><li><a href="#sede-a">Moratalaz</a></li><li><a href="#sede-v">Vallecas</a></li><li><a href="#equipo">Equipo</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul><li><a href="tel:+34910000100">910 000 100</a></li><li><a href="mailto:hola@dentistaexample.es">hola@dentistaexample.es</a></li><li>L–V · 10:00–14:00 y 16:00–21:00</li></ul>
     </div>
   </div>
-  <div class="legal"><div class="in" style="display:flex"><span>© 2026 DentistaExample Clínica Dental · Aviso legal · Privacidad · Cookies</span><span>Web de demostración: marca, direcciones, teléfonos, precios y opiniones ficticios.</span></div></div>
+  <div class="legal">
+    <div class="wrap">
+      <span>© 2026 DentistaExample Clínica Dental · Registro sanitario CS0000 (ejemplo)</span>
+      <nav aria-label="Legal"><a href="#inicio">Aviso legal</a><a href="#inicio">Privacidad</a><a href="#inicio">Cookies</a></nav>
+      <span class="demo">Web de demostración · marca ficticia</span>
+    </div>
+  </div>
 </footer>
 
-<div class="modal" id="modal" hidden>
-  <div class="mbox" role="dialog" aria-modal="true" aria-labelledby="mtitle">
-    <div class="mhead">
-      <h3 id="mtitle"><svg width="26" height="26"><use href="#i-cal"/></svg>Solicita tu cita gratuita</h3>
-      <p>Déjanos tus datos y te llamamos en menos de 24 h hábiles.</p>
-      <button class="x" type="button" id="mclose" aria-label="Cerrar">×</button>
-    </div>
-    <div class="mbody">
-      <div class="wa-alt"><span>¿Prefieres elegir tú el día y la hora?</span><button class="btn btn-wa" type="button" id="m2chat"><svg class="ico"><use href="#i-wa"/></svg>Reservar por WhatsApp</button></div>
-      <div id="mform"></div>
-    </div>
-  </div>
-</div>
-
-<button class="fab" type="button" id="fab" aria-label="Abrir chat de WhatsApp"><svg width="30" height="30"><use href="#i-wa"/></svg><span class="bdg" id="bdg">1</span></button>
+<!-- ============ Asistente de WhatsApp (simulado) ============ -->
+<button class="fab" type="button" id="fab" aria-label="Abrir el asistente de citas de WhatsApp" aria-controls="chat" aria-expanded="false"><svg width="30" height="30"><use href="#i-wa"/></svg><span class="bdg" id="bdg" aria-hidden="true">1</span></button>
 
 <div class="chatbox" id="chat" role="dialog" aria-label="Chat de WhatsApp con DentistaExample" hidden>
   <div class="ch">
-    <div class="av">D</div>
+    <div class="av" aria-hidden="true">A</div>
     <div><b>DentistaExample Clínica Dental</b><small id="st">en línea</small></div>
     <button class="x" type="button" id="close" aria-label="Cerrar chat">×</button>
   </div>
   <div class="msgs" id="msgs" aria-live="polite"></div>
   <form class="comp" id="comp">
     <input id="txt" autocomplete="off" placeholder="Escribe un mensaje" aria-label="Mensaje">
-    <button type="submit" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-6.2L11 12 3 9.7V3.5L22 12z"/></svg></button>
+    <button type="submit" aria-label="Enviar"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-6.2L11 12 3 9.7V3.5L22 12z"/></svg></button>
   </form>
 </div>
 
@@ -764,97 +831,57 @@ footer p{color:var(--navy-muted);font-size:16px;max-width:42ch}
 (() => {
   const $ = id => document.getElementById(id);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* Menús */
-  const pairs = [['m-trat','mega-trat'],['m-cli','mega-cli']];
-  function closeMenus(except){ pairs.forEach(([b,m]) => { if (b !== except){ $(b).setAttribute('aria-expanded','false'); $(m).hidden = true; } }); }
-  pairs.forEach(([b,m]) => $(b).addEventListener('click', e => {
-    e.stopPropagation(); const open = $(m).hidden; closeMenus(b);
-    $(m).hidden = !open; $(b).setAttribute('aria-expanded', String(open));
-  }));
-  document.querySelectorAll('.mega a').forEach(a => a.addEventListener('click', () => closeMenus()));
-  document.addEventListener('click', e => { if (!e.target.closest('.mega')) closeMenus(); });
-  $('burger').addEventListener('click', () => { const m = $('mob'); m.hidden = !m.hidden; $('burger').setAttribute('aria-expanded', String(!m.hidden)); });
-  $('mob').querySelectorAll('a,button').forEach(a => a.addEventListener('click', () => { $('mob').hidden = true; $('burger').setAttribute('aria-expanded','false'); }));
+  /* Cabecera */
+  const hdr = $('hdr');
+  const onScroll = () => hdr.classList.toggle('scrolled', scrollY > 8);
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  const mob = $('mob'), burger = $('burger');
+  const setMob = open => { mob.hidden = !open; burger.setAttribute('aria-expanded', String(open)); burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú'); };
+  burger.addEventListener('click', () => setMob(mob.hidden));
+  mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMob(false)));
 
-  /* Pestañas */
-  document.querySelectorAll('[data-tab]').forEach(t => t.addEventListener('click', () => {
-    document.querySelectorAll('[data-tab]').forEach(x => { x.setAttribute('aria-selected', String(x === t)); $(x.dataset.tab).hidden = x !== t; });
-  }));
+  /* Aparición al hacer scroll y contadores */
+  const fmtNum = (v, dec) => dec ? v.toFixed(dec).replace('.', ',') : Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  function count(el){
+    const to = parseFloat(el.dataset.count), dec = +(el.dataset.dec || 0), pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+    if (reduce) return;
+    const t0 = performance.now(), dur = 1400;
+    const step = t => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = pre + fmtNum(to * e, dec) + suf; if (p < 1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  }
+  const rvs = document.querySelectorAll('.rv'), counters = document.querySelectorAll('[data-count]');
+  if ('IntersectionObserver' in window){
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+    rvs.forEach(el => io.observe(el));
+    const co = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting){ count(e.target); co.unobserve(e.target); } }), { threshold: .6 });
+    counters.forEach(el => co.observe(el));
+  } else rvs.forEach(el => el.classList.add('on'));
 
-  /* Buscador */
-  $('finder').addEventListener('submit', e => {
+  /* Formulario de cita */
+  const form = $('cform'), ok = $('okbox');
+  function setErr(input, msgId, text){
+    input.setAttribute('aria-invalid', text ? 'true' : 'false');
+    $(msgId).textContent = text || '';
+    return !text;
+  }
+  form.addEventListener('submit', e => {
     e.preventDefault();
-    const q = $('q').value.trim().toLowerCase(); const res = $('res');
-    document.querySelectorAll('.sede').forEach(s => s.classList.remove('hit'));
-    if (!q){ res.textContent = 'Escribe tu barrio o código postal.'; return; }
-    let id = null;
-    if (/moratalaz|28030|vinateros|pavones|artilleros|estrella|vic[aá]lvaro|28032|ventas|28007/.test(q)) id = 'sede-a';
-    else if (/vallecas|28031|28018|28038|28051|guadalupe|puente|ensanche|santa eugenia|usera|28053/.test(q)) id = 'sede-v';
-    if (id){
-      const name = id === 'sede-a' ? 'DentistaExample Moratalaz' : 'DentistaExample Vallecas';
-      res.textContent = `Tu clínica más cercana es ${name}.`;
-      const el = $(id); el.classList.add('hit'); el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-      res.textContent = 'Aún no tenemos clínica en esa zona. Las más cercanas son Moratalaz (metro L9) y Vallecas (metro L1).';
-    }
+    const n = form.elements.n, t = form.elements.t, c = form.elements.c;
+    const okN = setErr(n, 'e-n', n.value.trim().length < 2 ? 'Escribe tu nombre para saber a quién llamar.' : '');
+    const okT = setErr(t, 'e-t', t.value.replace(/\D/g, '').length < 9 ? 'Escribe un teléfono de al menos 9 cifras.' : '');
+    const okC = setErr(c, 'e-c', c.checked ? '' : 'Acepta la política de privacidad para continuar.');
+    if (!(okN && okT && okC)){ (!okN ? n : !okT ? t : c).focus(); return; }
+    const name = esc(n.value.trim().split(/\s+/)[0]);
+    $('ok-t').innerHTML = `¡Gracias, ${name}!`;
+    $('ok-p').textContent = `Hemos recibido tu solicitud para la clínica de ${form.elements.s.value}. Te llamaremos ${form.elements.h.value} en menos de 24 horas hábiles.`;
+    form.hidden = true; ok.hidden = false; ok.focus();
   });
+  $('again').addEventListener('click', () => { form.reset(); ok.hidden = true; form.hidden = false; form.elements.n.focus(); });
 
-  /* Copiar dirección */
-  document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => {
-    const el = $(b.dataset.copy); const old = b.textContent;
-    const done = t => { b.textContent = t; setTimeout(() => b.textContent = old, 1800); };
-    try { navigator.clipboard.writeText(el.textContent).then(() => done('¡Copiada!'), () => {
-      const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); done('Seleccionada');
-    }); } catch (e) { done('Seleccionada'); }
-  }));
-
-  /* Formulario (en página y en ventana) */
-  const TRATS = ['Revisión general','Limpieza dental','Implantes','Prótesis','Ortodoncia','Estética dental','Urgencia'];
-  function formHTML(p){
-    return `<form class="cform" novalidate>
-      ${p === 'pg' ? '<h3>Solicita tu cita gratuita</h3><p>Te responderemos en menos de 24 h hábiles.</p>' : ''}
-      <div class="fgrid">
-        <div class="f"><label for="${p}-n">Nombre completo *</label><input id="${p}-n" name="n" placeholder="Tu nombre" autocomplete="name"></div>
-        <div class="f"><label for="${p}-e">Email *</label><input id="${p}-e" name="e" type="email" placeholder="tu@email.com" autocomplete="email"></div>
-        <div class="f"><label for="${p}-t">Teléfono *</label><input id="${p}-t" name="t" type="tel" placeholder="+34 600 000 000" autocomplete="tel"></div>
-        <div class="f"><label for="${p}-s">Clínica</label><select id="${p}-s" name="s"><option>Moratalaz</option><option>Vallecas</option><option>Me da igual</option></select></div>
-        <div class="f full"><label for="${p}-r">Tratamiento de interés</label><select id="${p}-r" name="r"><option value="">Selecciona un tratamiento</option>${TRATS.map(t => `<option>${t}</option>`).join('')}</select></div>
-        <div class="f full"><label for="${p}-m">Mensaje</label><textarea id="${p}-m" name="m" placeholder="Cuéntanos brevemente qué necesitas (sin datos médicos)"></textarea></div>
-        <label class="chk"><input type="checkbox" id="${p}-c" name="c">He leído y acepto la <a href="#contacto">Política de Privacidad</a></label>
-      </div>
-      <button class="btn btn-g" type="submit"><svg class="ico"><use href="#i-cal"/></svg>Solicitar cita gratuita</button>
-      <p class="err" aria-live="polite"></p>
-    </form>`;
-  }
-  function mountForm(host, p){
-    host.innerHTML = formHTML(p);
-    const f = host.querySelector('form');
-    f.addEventListener('submit', e => {
-      e.preventDefault();
-      const err = f.querySelector('.err'); const v = n => f.elements[n].value.trim();
-      if (!v('n')) return err.textContent = 'Escribe tu nombre para que sepamos a quién llamar.';
-      if (!/^\S+@\S+\.\S+$/.test(v('e'))) return err.textContent = 'Revisa el email: debe tener el formato nombre@dominio.com.';
-      if (v('t').replace(/\D/g,'').length < 9) return err.textContent = 'Escribe un teléfono de al menos 9 cifras.';
-      if (!f.elements.c.checked) return err.textContent = 'Acepta la política de privacidad para continuar.';
-      const name = esc(v('n').split(' ')[0]);
-      host.innerHTML = `<div class="ok"><span class="tick"><svg width="30" height="30"><use href="#i-check"/></svg></span><h3>¡Gracias, ${name}!</h3>
-        <p>Hemos recibido tu solicitud para la clínica de ${esc(v('s'))}. Te llamamos en menos de 24 h hábiles para darte cita.</p>
-        <button class="btn btn-line" type="button" style="color:var(--green)">Enviar otra solicitud</button></div>`;
-      host.querySelector('button').addEventListener('click', () => mountForm(host, p));
-    });
-  }
-  mountForm($('formcard'), 'pg');
-  const modal = $('modal');
-  function openModal(){ mountForm($('mform'), 'md'); modal.hidden = false; document.body.style.overflow = 'hidden'; setTimeout(() => $('md-n') && $('md-n').focus(), 30); }
-  function closeModal(){ modal.hidden = true; document.body.style.overflow = ''; }
-  document.querySelectorAll('[data-form]').forEach(b => b.addEventListener('click', () => { closeMenus(); openModal(); }));
-  $('mclose').addEventListener('click', closeModal);
-  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  $('m2chat').addEventListener('click', () => { closeModal(); openChat(); });
-
-  /* Chat de WhatsApp */
-  const chat = $('chat'), msgs = $('msgs'), txt = $('txt');
+  /* Asistente de WhatsApp (simulado) */
+  const chat = $('chat'), msgs = $('msgs'), txt = $('txt'), fab = $('fab');
   const SEDES = { a: 'Moratalaz', v: 'Vallecas' };
   const TRAT = ['Revisión', 'Limpieza dental', 'Valoración de implantes', 'Valoración de ortodoncia', 'Urgencia'];
   const DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
@@ -910,16 +937,17 @@ footer p{color:var(--navy-muted);font-size:16px;max-width:42ch}
   function done(){ step = 'done'; bot('✅ <strong>¡Cita confirmada!</strong> Te esperamos.\n\nEl día anterior te enviaré un recordatorio para que confirmes o cambies la cita con un toque.', [['Pedir otra cita', () => { st = {}; askT(); }]], 1100); }
 
   function openChat(sede){
-    chat.hidden = false; $('bdg').hidden = true;
+    chat.hidden = false; $('bdg').hidden = true; fab.setAttribute('aria-expanded', 'true'); setMob(false);
     if (sede) st.sede = sede;
     if (!started){ started = true; hello(); }
     else if (sede && !busy && (step === 'menu' || step === 'done')){ clearQ(); add(`Quiero cita en ${SEDES[sede]}`, 'o'); askT(); }
     setTimeout(() => txt.focus({ preventScroll: true }), 50);
   }
+  function closeChat(){ chat.hidden = true; fab.setAttribute('aria-expanded', 'false'); }
   document.querySelectorAll('[data-chat]').forEach(b => b.addEventListener('click', () => openChat(b.dataset.sede)));
-  $('fab').addEventListener('click', () => chat.hidden ? openChat() : (chat.hidden = true));
-  $('close').addEventListener('click', () => { chat.hidden = true; });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape'){ chat.hidden = true; closeModal(); closeMenus(); } });
+  fab.addEventListener('click', () => chat.hidden ? openChat() : closeChat());
+  $('close').addEventListener('click', () => { closeChat(); fab.focus(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (!chat.hidden){ closeChat(); fab.focus(); } setMob(false); } });
   $('comp').addEventListener('submit', e => {
     e.preventDefault();
     const t = txt.value.trim(); if (!t || busy) return;
@@ -933,7 +961,5 @@ footer p{color:var(--navy-muted);font-size:16px;max-width:42ch}
   });
 })();
 </script>
-
 </body>
 </html>
-

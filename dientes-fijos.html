@@ -1,0 +1,618 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><style>[hidden]{display:none!important}body{margin:0}</style>
+<title>DentistaExample · Dientes fijos en un día</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* Layout: landing de campaña (Google Ads) — cabecera mínima, hero petróleo con formulario, cómo funciona, tu día hora a hora, testimonios, motivos, precio, FAQ, segundo formulario, barra fija móvil. Look claro único y deliberado. */
+:root{
+  color-scheme:light;
+  --deep:#0C3B43; --deep-2:#124C56; --deep-ink:#EAF5F5; --deep-muted:#A7C6C9;
+  --aqua:#2FB3B9; --aqua-d:#1B7F85; --sun:#FFC24B; --sun-soft:#FFF3D6;
+  --bg:#FFFFFF; --soft:#F3F7F7; --ink:#10212A; --muted:#5A6B72; --line:#DFE8EA;
+  --ok:#1E9E6A;
+  --chat:#EDE7DD; --in:#FFFFFF; --out:#D8F7CF; --wa:#25D366;
+  --f-display:"Sora","Avenir Next","Segoe UI",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16.5px;line-height:1.6}
+.in{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2.5px solid var(--aqua);outline-offset:3px}
+.ico{width:18px;height:18px;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:700 16px var(--f-display);border-radius:8px;padding:15px 24px;border:2px solid transparent;cursor:pointer;transition:background .15s,transform .15s;text-align:center}
+.btn:hover{transform:translateY(-1px)}
+.btn-sun{background:var(--sun);color:var(--ink)}
+.btn-sun:hover{background:#FFB523}
+.btn-deep{background:var(--deep);color:#fff}
+.btn-wa{background:var(--wa);color:#0B2A17}
+.btn-line{border-color:currentColor;background:transparent}
+
+/* Cabecera mínima */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--deep)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--deep);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+header.top .in{display:flex;align-items:center;gap:16px;padding-block:12px}
+.logo{display:flex;align-items:center;gap:10px;margin-right:auto}
+.logo .mk{width:38px;height:38px;border-radius:9px;background:var(--aqua);display:grid;place-items:center;color:var(--deep)}
+.logo b{font:800 20px var(--f-display);letter-spacing:-.02em;display:block;line-height:1}
+.logo small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--deep-muted);font-weight:600}
+.tel{display:flex;align-items:center;gap:8px;font:700 17px var(--f-display);white-space:nowrap}
+.tel svg{color:var(--sun)}
+header.top .btn{padding:11px 18px;font-size:15px}
+@media (max-width:640px){header.top .btn{display:none}.logo small{display:none}.tel{font-size:15px}}
+
+/* Hero */
+.hero{background:var(--deep);color:var(--deep-ink);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:auto auto -320px -260px;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(47,179,185,.32),transparent 62%)}
+.hero .in{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:52px;align-items:center;padding-block:56px 72px;position:relative}
+@media (max-width:940px){.hero .in{grid-template-columns:minmax(0,1fr);gap:34px;padding-block:34px 48px}}
+.eyebrow{font:600 13px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--sun)}
+.hero h1{font-size:clamp(38px,5.6vw,66px);line-height:1.02;font-weight:800;color:#fff;margin-top:14px}
+.hero h1 em{font-style:normal;color:var(--aqua)}
+.hero .sub{font-size:19px;color:var(--deep-muted);max-width:46ch;margin-top:18px}
+.checks{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 22px;max-width:560px}
+@media (max-width:520px){.checks{grid-template-columns:minmax(0,1fr)}}
+.checks li{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:#fff}
+.checks svg{color:var(--sun);flex:none;margin-top:3px}
+.rating{display:flex;align-items:center;gap:14px;margin-top:28px;flex-wrap:wrap}
+.rating .stars{color:var(--sun);letter-spacing:2px;font-size:18px}
+.rating span{color:var(--deep-muted);font-size:15px}
+.rating b{color:#fff}
+
+/* Formulario */
+.formcard{background:#fff;color:var(--ink);border-radius:16px;padding:28px;box-shadow:0 40px 70px -30px rgba(0,0,0,.6);scroll-margin-top:90px}
+@media (max-width:520px){.formcard{padding:22px}}
+.fc-tag{display:inline-flex;align-items:center;gap:7px;background:var(--sun-soft);color:#8A5A00;font:700 12.5px var(--f-display);letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:6px}
+.formcard h2{font-size:28px;margin:12px 0 4px}
+.formcard .lead{color:var(--muted);margin-bottom:18px;font-size:15.5px}
+.fields{display:flex;flex-direction:column;gap:14px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f label{font-weight:700;font-size:14.5px}
+.f input,.f select{font:inherit;font-size:16px;border:1.5px solid var(--line);border-radius:8px;padding:13px 14px;background:#fff;color:var(--ink);width:100%}
+.f input:focus,.f select:focus{outline:none;border-color:var(--aqua);box-shadow:0 0 0 4px rgba(47,179,185,.18)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--muted);line-height:1.45}
+.chk input{width:18px;height:18px;margin-top:1px;accent-color:var(--aqua-d);flex:none}
+.chk a{color:var(--aqua-d);font-weight:600;text-decoration:underline}
+.formcard .btn{width:100%;margin-top:6px;font-size:17px}
+.or{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13.5px;margin:14px 0}
+.or::before,.or::after{content:"";height:1px;background:var(--line);flex:1}
+.formcard .btn-wa{margin-top:0}
+.err{color:#C2384A;font-size:14px;min-height:1.2em;margin-top:8px}
+.ok{text-align:center;padding:18px 6px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.ok .tick{width:66px;height:66px;border-radius:50%;background:#E3F6EE;color:var(--ok);display:grid;place-items:center}
+.ok h2{margin:0}
+.ok p{color:var(--muted);max-width:36ch}
+.ok .timer{font:600 14px var(--f-mono);background:var(--soft);padding:8px 12px;border-radius:6px;color:var(--ink)}
+
+section.blk .in{padding-block:80px}
+@media (max-width:760px){section.blk .in{padding-block:54px}}
+.sh{display:flex;flex-direction:column;gap:10px;margin-bottom:40px;max-width:62ch}
+.kick{font:600 13px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--aqua-d)}
+.sh h2{font-size:clamp(30px,4.2vw,46px);line-height:1.08;font-weight:800}
+.sh p{color:var(--muted);font-size:18px}
+
+/* Cómo funciona */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:860px){.steps{grid-template-columns:minmax(0,1fr)}}
+.step{border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:10px;position:relative;background:#fff}
+.step .when{font:600 12.5px var(--f-mono);color:var(--aqua-d);background:#E6F6F6;padding:5px 10px;border-radius:6px;align-self:flex-start}
+.step .n{font:800 52px/1 var(--f-display);color:var(--line);position:absolute;top:18px;right:22px}
+.step h3{font-size:21px;margin-top:6px}
+.step p{color:var(--muted)}
+.step.hl{background:var(--deep);color:#fff;border-color:var(--deep)}
+.step.hl .when{background:rgba(255,194,75,.18);color:var(--sun)}
+.step.hl .n{color:rgba(255,255,255,.12)}
+.step.hl p{color:var(--deep-muted)}
+
+/* Tu día hora a hora */
+.dayblk{background:var(--soft)}
+.tl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.tl::before{content:"";position:absolute;left:0;right:0;top:27px;height:3px;background:linear-gradient(90deg,var(--aqua),var(--sun))}
+@media (max-width:860px){.tl{grid-template-columns:minmax(0,1fr)}.tl::before{left:27px;right:auto;top:0;bottom:0;width:3px;height:auto;background:linear-gradient(180deg,var(--aqua),var(--sun))}}
+.tl li{list-style:none;padding:0 18px 0 0;position:relative}
+@media (max-width:860px){.tl li{padding:0 0 28px 74px}}
+.tl .dot{width:56px;height:56px;border-radius:50%;background:#fff;border:3px solid var(--aqua);display:grid;place-items:center;color:var(--deep);position:relative;z-index:1;margin-bottom:16px}
+@media (max-width:860px){.tl .dot{position:absolute;left:0;top:0;margin:0}}
+.tl li:last-child .dot{border-color:var(--sun);background:var(--sun)}
+.tl time{font:600 22px var(--f-mono);color:var(--deep);display:block}
+.tl h3{font-size:18.5px;margin:4px 0 6px}
+.tl p{color:var(--muted);font-size:15.5px;max-width:30ch}
+.daynote{margin-top:30px;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;max-width:760px;font-size:15.5px}
+.daynote svg{color:var(--aqua-d);flex:none;margin-top:2px}
+
+/* Testimonios */
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media (max-width:900px){.quotes{grid-template-columns:minmax(0,1fr)}}
+.q{border-radius:14px;padding:26px;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.q .mark{font:800 60px/.6 var(--f-display);color:var(--aqua)}
+.q p{font-size:17.5px;line-height:1.55}
+.q footer{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:8px;border-top:1px solid var(--line)}
+.q .av{width:42px;height:42px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;font:700 16px var(--f-display);flex:none}
+.q footer b{display:block;font-family:var(--f-display)}
+.q footer span{font-size:14px;color:var(--muted)}
+.q.big{background:var(--deep);color:#fff;border-color:var(--deep)}
+.q.big .mark{color:var(--sun)}
+.q.big footer{border-color:rgba(255,255,255,.14)}
+.q.big .av{background:var(--sun);color:var(--ink)}
+.q.big footer span{color:var(--deep-muted)}
+
+/* Motivos */
+.why{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media (max-width:980px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.why{grid-template-columns:minmax(0,1fr)}}
+.w{display:flex;flex-direction:column;gap:10px}
+.w .wi{width:52px;height:52px;border-radius:12px;background:#E6F6F6;color:var(--aqua-d);display:grid;place-items:center}
+.w b{font:800 34px var(--f-display);color:var(--deep);line-height:1;margin-top:6px;font-variant-numeric:tabular-nums}
+.w h3{font-size:18.5px}
+.w p{color:var(--muted);font-size:15.5px}
+
+/* Precio */
+.price{background:var(--deep);color:#fff;border-radius:20px;padding:40px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px;align-items:center;position:relative;overflow:hidden}
+.price::after{content:"";position:absolute;right:-120px;top:-120px;width:320px;height:320px;border-radius:50%;border:40px solid rgba(255,194,75,.16)}
+@media (max-width:860px){.price{grid-template-columns:minmax(0,1fr);padding:28px}}
+.price h2{font-size:clamp(28px,3.6vw,40px)}
+.price p{color:var(--deep-muted);margin-top:12px;max-width:46ch}
+.pbox{background:#fff;color:var(--ink);border-radius:14px;padding:24px;position:relative;z-index:1}
+.pbox .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.pbox .row:last-of-type{border:none}
+.pbox .row span{color:var(--muted);font-size:15px}
+.pbox .row b{font:800 26px var(--f-display);font-variant-numeric:tabular-nums}
+.pbox .row b small{font-size:14px;font-weight:600;color:var(--muted)}
+.pbox .row.hl b{color:var(--aqua-d)}
+.pbox .btn{width:100%;margin-top:14px}
+.pbox .fine{font-size:12px;color:var(--muted);margin-top:10px}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:12px;max-width:820px}
+details{border:1px solid var(--line);border-radius:12px;background:#fff}
+summary{cursor:pointer;list-style:none;padding:19px 22px;font:700 18px var(--f-display);display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:600 24px var(--f-display);color:var(--aqua-d);line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 22px 20px;color:var(--muted)}
+
+/* Cierre */
+.close{background:linear-gradient(180deg,var(--soft),#fff)}
+.close .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:48px;align-items:center}
+@media (max-width:900px){.close .in{grid-template-columns:minmax(0,1fr)}}
+.close .formcard{box-shadow:0 30px 60px -34px rgba(12,59,67,.5);border:1px solid var(--line)}
+.close h2{font-size:clamp(32px,4.6vw,52px);line-height:1.05;font-weight:800}
+.close .sub{color:var(--muted);font-size:18px;margin-top:14px;max-width:44ch}
+.contacts{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.contacts div{display:flex;gap:12px;align-items:center;font-weight:600}
+.contacts svg{color:var(--aqua-d)}
+
+footer.site{background:var(--deep);color:var(--deep-muted);font-size:14px}
+footer.site .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;padding-block:28px}
+footer.site b{color:#fff;font-family:var(--f-display)}
+
+/* Barra fija móvil */
+.mbar{display:none}
+@media (max-width:700px){
+  .mbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));position:fixed;left:0;right:0;bottom:0;z-index:65;background:#fff;border-top:1px solid var(--line);padding:8px max(10px,env(safe-area-inset-right,0px)) calc(8px + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px));gap:8px;box-shadow:0 -10px 30px -16px rgba(0,0,0,.3)}
+  .mbar a,.mbar button{display:flex;flex-direction:column;align-items:center;gap:3px;font:700 12.5px var(--f-display);border:none;border-radius:8px;padding:8px 4px;cursor:pointer;color:var(--ink);background:var(--soft)}
+  .mbar .wa{background:var(--wa);color:#0B2A17}
+  .mbar .ct{background:var(--sun)}
+  body{padding-bottom:74px}
+  .fab{display:none!important}
+}
+
+/* WhatsApp */
+.fab{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;width:62px;height:62px;border-radius:18px;background:#25D366;color:#fff;border:none;cursor:pointer;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45)}
+.fab .bdg{position:absolute;top:-5px;right:-5px;width:21px;height:21px;border-radius:50%;background:#E5484D;color:#fff;font:700 12px var(--f-body);display:grid;place-items:center}
+.chatbox{position:fixed;z-index:90;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(94px + env(safe-area-inset-bottom,0px));width:384px;height:min(660px,calc(100% - 120px));background:#EFEAE2;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 26px 60px -18px rgba(0,0,0,.5);font-family:"Segoe UI",Helvetica,Arial,system-ui,sans-serif}
+@media (max-width:520px){.chatbox{inset:0;width:auto;height:auto;border-radius:0;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}
+.ch{background:#008069;color:#fff;display:flex;align-items:center;gap:6px;padding:9px 6px 9px 2px;flex:none}
+.ch .back{background:none;border:none;color:#fff;width:36px;height:40px;cursor:pointer;display:grid;place-items:center;border-radius:50%}
+.ch .av{width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none;color:#0C3B43}
+.ch .nm{min-width:0;flex:1;display:flex;flex-direction:column}
+.ch b{display:flex;align-items:center;gap:4px;font-size:16px;font-weight:600;min-width:0}
+.ch b span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ch small{font-size:12.5px;opacity:.85}
+.ch .acts{display:flex}
+.ch .acts span{width:38px;height:40px;display:grid;place-items:center;opacity:.95}
+@media (max-width:360px){.ch .acts span:first-child{display:none}}
+.wall{flex:1;overflow-y:auto;padding:8px 16px 12px;display:flex;flex-direction:column;background-color:#EFEAE2;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Cg fill='none' stroke='%23DCD3C6' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='14' cy='16' r='5'/%3E%3Cpath d='M54 10c-3 0-5 2-5 5 0 3 1 4 2 8 .5 2 1 4 2 4s1-3 3-3 2 3 3 3 1.5-2 2-4c1-4 2-5 2-8 0-3-2-5-5-5-1.5 0-2.5 1-3 1s-1.5-1-3-1z'/%3E%3Cpath d='M18 58l7 7M25 58l-7 7'/%3E%3Ccircle cx='70' cy='66' r='3'/%3E%3Cpath d='M40 42h9M44.5 37.5v9'/%3E%3Cpath d='M10 84c4-4 8 4 12 0'/%3E%3C/g%3E%3C/svg%3E")}
+.day{align-self:center;background:#fff;color:#54656F;font-size:12.5px;padding:5px 12px;border-radius:7.5px;box-shadow:0 1px .5px rgba(11,20,26,.13);margin:6px 0 8px;text-transform:uppercase}
+.sys{align-self:center;background:#FFEECD;color:#54656F;font-size:12.5px;text-align:center;padding:6px 12px;border-radius:7.5px;max-width:92%;margin-bottom:6px;line-height:1.4;box-shadow:0 1px .5px rgba(11,20,26,.13)}
+.m{max-width:84%;display:flex;flex-direction:column;gap:2px;margin-top:2px;animation:pop .18s ease-out}
+.m.first{margin-top:10px}
+.m.i{align-self:flex-start} .m.o{align-self:flex-end}
+.m.has-btns{width:min(272px,84%)}
+.bub{position:relative;padding:6px 8px 8px 9px;border-radius:7.5px;font-size:14.2px;line-height:19px;color:#111B21;box-shadow:0 1px .5px rgba(11,20,26,.13);white-space:pre-line;overflow-wrap:anywhere}
+.m.i .bub{background:#fff}
+.m.o .bub{background:#D9FDD3}
+.m.first.i .bub{border-top-left-radius:0}
+.m.first.o .bub{border-top-right-radius:0}
+.m.first.i .bub::before{content:"";position:absolute;left:-8px;top:0;width:8px;height:13px;background:#fff;clip-path:polygon(0 0,100% 0,100% 100%)}
+.m.first.o .bub::before{content:"";position:absolute;right:-8px;top:0;width:8px;height:13px;background:#D9FDD3;clip-path:polygon(0 0,100% 0,0 100%)}
+.bub small{font-size:12.5px;color:#667781;line-height:17px}
+.meta{float:right;margin:6px 0 -6px 12px;font-size:11px;color:#667781;display:inline-flex;gap:3px;align-items:center;line-height:15px}
+.wbtns{display:flex;flex-direction:column;gap:2px}
+.wbtn{background:#fff;border:none;border-radius:7.5px;box-shadow:0 1px .5px rgba(11,20,26,.13);color:#027EB5;font:500 14.5px "Segoe UI",Helvetica,Arial,system-ui,sans-serif;padding:10px 12px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;width:100%}
+.wbtn:hover:not(:disabled){background:#F7F8F8}
+.wbtn:disabled{color:#8696A0;cursor:default}
+.typing{align-self:flex-start;background:#fff;border-radius:7.5px;padding:11px 13px;display:flex;gap:4px;margin-top:10px;box-shadow:0 1px .5px rgba(11,20,26,.13)}
+.typing i{width:7px;height:7px;border-radius:50%;background:#8696A0;animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+.sheet{position:absolute;inset:0;background:rgba(11,20,26,.42);display:flex;align-items:flex-end;z-index:5}
+.pan{background:#fff;width:100%;border-radius:14px 14px 0 0;max-height:82%;display:flex;flex-direction:column;animation:up .22s ease-out;padding-bottom:env(safe-area-inset-bottom,0px)}
+.pan header{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #E9EDEF;font-weight:600;font-size:16.5px;color:#111B21}
+.pan .sx{background:none;border:none;font-size:26px;line-height:1;color:#54656F;cursor:pointer;width:32px;height:32px}
+.pan .opts{overflow-y:auto}
+.pan label{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 22px;border-bottom:1px solid #F0F2F5;cursor:pointer;font-size:15.5px;color:#111B21}
+.pan label small{display:block;color:#667781;font-size:13px;margin-top:2px}
+.pan input{width:20px;height:20px;accent-color:#00A884;flex:none}
+.pan .send2{margin:12px 16px 16px;background:#00A884;color:#fff;border:none;border-radius:24px;padding:13px;font:600 15px "Segoe UI",Helvetica,Arial,sans-serif;cursor:pointer}
+.pan .send2:disabled{opacity:.45;cursor:default}
+.comp{display:flex;align-items:flex-end;gap:6px;padding:6px 8px 8px;background:#F0F2F5;flex:none}
+.field{flex:1;min-width:0;display:flex;align-items:center;gap:2px;background:#fff;border-radius:24px;padding:3px 8px}
+.field span{color:#54656F;display:grid;place-items:center;width:30px;height:36px;flex:none}
+.field input{flex:1;min-width:0;border:none;outline:none;font:inherit;font-size:15px;padding:8px 4px;background:transparent;color:#111B21}
+.comp .send{width:46px;height:46px;border-radius:50%;background:#00A884;border:none;color:#fff;display:grid;place-items:center;flex:none;cursor:pointer}
+@keyframes up{from{transform:translateY(40px);opacity:.3}to{transform:none;opacity:1}}
+
+
+@keyframes pop{from{transform:translateY(4px);opacity:.4}to{transform:none;opacity:1}}
+@keyframes blink{0%,100%{opacity:.25}50%{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h2v2h6V2h2v2h3a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm12 7H5v10h14zm-8.7 8-3-3 1.4-1.4 1.6 1.6 4.3-4.3 1.4 1.4z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></symbol>
+  <symbol id="i-shell" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M12 20c-4.5 0-8-2.6-8-6.2C4 9.4 7.6 4 12 4s8 5.4 8 9.8c0 3.6-3.5 6.2-8 6.2z"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M12 20V7M8.2 18.8 9.5 8M15.8 18.8 14.5 8"/></symbol>
+  <symbol id="i-tooth" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.2 4.6 2 8 .5 2.2 1 5.5 2.6 5.5 1.7 0 1.6-4.5 4.4-4.5s2.7 4.5 4.4 4.5c1.6 0 2.1-3.3 2.6-5.5.8-3.4 2-5 2-8C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M4 12h16"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></symbol>
+  <symbol id="i-coffee" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2 2 0 0 1 0 4h-2M8 3v3M12 3v3"/></symbol>
+  <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 14c1 1.6 2.4 2.4 4 2.4s3-.8 4-2.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><circle cx="9" cy="10" r="1.2" fill="currentColor"/><circle cx="15" cy="10" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-lab" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" d="M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3M7 15h10"/></symbol>
+  <symbol id="i-euro" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M17.5 6.5A7 7 0 1 0 17.5 17.5M4 10h9M4 14h9"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-2-4-6-3-5-1 .7 1.2 3 1 5 1zm0 0c2-4 6-3 5-1-.7 1.2-3 1-5 1z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8.5 14 7 21l5-2.5 5 2.5-1.5-7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 11v6M12 7.5v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="in">
+    <a class="logo" href="#inicio" aria-label="DentistaExample, inicio">
+      <span class="mk" aria-hidden="true"><svg width="22" height="22"><use href="#i-tooth"/></svg></span>
+      <span><b>DentistaExample</b><small>Implantología avanzada</small></span>
+    </a>
+    <span class="tel"><svg class="ico"><use href="#i-phone"/></svg>910 000 100</span>
+    <a class="btn btn-sun" href="#cita"><svg class="ico"><use href="#i-cal"/></svg>Pide cita</a>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="in">
+    <div>
+      <span class="eyebrow">Implantes en Madrid · Moratalaz y Vallecas</span>
+      <h1>Entra por la mañana. <em>Sal con dientes fijos.</em></h1>
+      <p class="sub">Colocamos tus implantes y tu prótesis fija en el mismo día, con sedación para que no te enteres de nada.</p>
+      <ul class="checks">
+        <li><svg width="18" height="18"><use href="#i-check"/></svg>Prótesis fija en unas horas</li>
+        <li><svg width="18" height="18"><use href="#i-check"/></svg>Sedación consciente</li>
+        <li><svg width="18" height="18"><use href="#i-check"/></svg>Primera visita y escáner 3D gratis</li>
+        <li><svg width="18" height="18"><use href="#i-check"/></svg>Financiación hasta 60 meses</li>
+      </ul>
+      <div class="rating"><span class="stars" aria-label="4,9 de 5">★★★★★</span><span><b>4,9/5</b> · 860 opiniones en Google</span></div>
+    </div>
+    <div class="formcard" id="cita"><div id="form1"></div></div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="in">
+    <div class="sh">
+      <span class="kick">Cómo funciona</span>
+      <h2>Tres citas. Una de ellas cambia tu vida.</h2>
+      <p>Todo el tratamiento se planifica antes, para que el día de la intervención solo tengas que venir.</p>
+    </div>
+    <div class="steps">
+      <article class="step"><span class="n">1</span><span class="when">Día 0 · 45 min</span><h3>Valoración gratuita</h3><p>Escáner 3D, estudio de tu hueso y plan de tratamiento con presupuesto cerrado. Sin compromiso.</p></article>
+      <article class="step hl"><span class="n">2</span><span class="when">Día 1 · unas 8 h</span><h3>Implantes y dientes fijos</h3><p>Colocamos los implantes con sedación y, esa misma tarde, tu prótesis fija provisional.</p></article>
+      <article class="step"><span class="n">3</span><span class="when">3–6 meses después</span><h3>Prótesis definitiva</h3><p>Cuando el hueso se ha unido a los implantes, cambiamos la provisional por la definitiva.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="blk dayblk">
+  <div class="in">
+    <div class="sh">
+      <span class="kick">El día de la intervención</span>
+      <h2>Tu día, hora a hora</h2>
+    </div>
+    <ol class="tl" style="margin:0;padding:0">
+      <li><span class="dot"><svg width="24" height="24"><use href="#i-scan"/></svg></span><time>09:00</time><h3>Llegada y preparación</h3><p>Revisamos el plan contigo y te tomamos las últimas medidas.</p></li>
+      <li><span class="dot"><svg width="24" height="24"><use href="#i-moon"/></svg></span><time>10:00</time><h3>Implantes con sedación</h3><p>Duermes tranquilo mientras el equipo coloca los implantes.</p></li>
+      <li><span class="dot"><svg width="24" height="24"><use href="#i-coffee"/></svg></span><time>13:00</time><h3>Descanso</h3><p>Te recuperas en la clínica mientras nuestro laboratorio termina tu prótesis.</p></li>
+      <li><span class="dot"><svg width="24" height="24"><use href="#i-smile"/></svg></span><time>17:00</time><h3>Sales con dientes fijos</h3><p>Te colocamos la prótesis y te vas a casa sonriendo.</p></li>
+    </ol>
+    <div class="daynote"><svg width="20" height="20"><use href="#i-info"/></svg><p>Ven acompañado. Después de la sedación no puedes conducir, y te daremos por escrito qué comer los primeros días.</p></div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="in">
+    <div class="sh">
+      <span class="kick">Pacientes</span>
+      <h2>Lo que nos cuentan después</h2>
+    </div>
+    <div class="quotes">
+      <article class="q big"><span class="mark">“</span><p>Llevaba diez años con dentadura postiza. Entré a las nueve y a las cinco estaba comiéndome un yogur con mis dientes fijos.</p><footer><span class="av">C</span><div><b>Carmen, 64 años</b><span>Dientes fijos en ambas arcadas</span></div></footer></article>
+      <article class="q"><span class="mark">“</span><p>Tenía miedo al dolor y no me enteré de nada. Me explicaron todo antes y el precio fue el que me dijeron.</p><footer><span class="av">J</span><div><b>José Luis, 58 años</b><span>Arcada superior</span></div></footer></article>
+      <article class="q"><span class="mark">“</span><p>Lo pagué en cómodos plazos. Ahora me río en las fotos sin taparme la boca.</p><footer><span class="av">M</span><div><b>Mercedes, 61 años</b><span>Arcada inferior</span></div></footer></article>
+    </div>
+  </div>
+</section>
+
+<section class="blk" style="background:var(--soft)">
+  <div class="in">
+    <div class="sh">
+      <span class="kick">Por qué elegirnos</span>
+      <h2>Lo que hay detrás de "en un día"</h2>
+    </div>
+    <div class="why">
+      <div class="w"><span class="wi"><svg width="26" height="26"><use href="#i-lab"/></svg></span><b>En casa</b><h3>Laboratorio propio</h3><p>Fabricamos tu prótesis en la clínica. Por eso podemos dártela el mismo día.</p></div>
+      <div class="w"><span class="wi"><svg width="26" height="26"><use href="#i-award"/></svg></span><b>25 años</b><h3>Experiencia en implantes</h3><p>Miles de pacientes tratados con implantología avanzada.</p></div>
+      <div class="w"><span class="wi"><svg width="26" height="26"><use href="#i-gift"/></svg></span><b>0 €</b><h3>Primera visita gratis</h3><p>Diagnóstico, escáner 3D y plan de tratamiento sin compromiso.</p></div>
+      <div class="w"><span class="wi"><svg width="26" height="26"><use href="#i-euro"/></svg></span><b>60 meses</b><h3>Financiación a medida</h3><p>Opciones adaptadas a ti, incluso sin intereses.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="blk">
+  <div class="in">
+    <div class="price">
+      <div>
+        <span class="eyebrow">Precio cerrado</span>
+        <h2 style="margin-top:10px">Sabes lo que pagas antes de empezar</h2>
+        <p>El presupuesto incluye implantes, sedación, prótesis provisional y definitiva y las revisiones del primer año. Sin sorpresas.</p>
+      </div>
+      <div class="pbox">
+        <div class="row"><span>Arcada completa fija</span><b><small>desde</small> 5.900 €</b></div>
+        <div class="row hl"><span>Financiado</span><b><small>desde</small> 99 €<small>/mes*</small></b></div>
+        <div class="row"><span>Valoración y escáner 3D</span><b>Gratis</b></div>
+        <a class="btn btn-sun" href="#cita"><svg class="ico"><use href="#i-cal"/></svg>Quiero mi valoración gratis</a>
+        <p class="fine">*Financiación sujeta a aprobación de la entidad financiera. Precios de ejemplo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blk" style="padding-top:0">
+  <div class="in" style="padding-top:0">
+    <div class="sh">
+      <span class="kick">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>¿Duele?</summary><p>No. La intervención se hace con sedación consciente y anestesia local: estás relajado y no notas nada. Los días siguientes puede haber molestias leves que se controlan con analgésicos normales.</p></details>
+      <details><summary>¿De verdad salgo con dientes el mismo día?</summary><p>Sí, en la mayoría de los casos. Salen con una prótesis fija provisional que ya puedes usar. A los 3–6 meses la cambiamos por la definitiva.</p></details>
+      <details><summary>¿Y si tengo poco hueso?</summary><p>En la valoración gratuita lo vemos con el escáner 3D. Hay técnicas para casi todos los casos, como los implantes cigomáticos, y te diremos la tuya.</p></details>
+      <details><summary>¿Cuánto cuesta?</summary><p>Depende de tu caso. Una arcada completa fija empieza en 5.900 €, o desde 99 € al mes. En la primera visita te damos un presupuesto cerrado.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="blk close">
+  <div class="in">
+    <div>
+      <span class="kick">Primera visita gratis</span>
+      <h2 style="margin-top:10px">Todo puede cambiar en un día</h2>
+      <p class="sub">Déjanos tu teléfono y te llamamos para darte cita en Moratalaz o Vallecas. Sin compromiso.</p>
+      <div class="contacts">
+        <div><svg class="ico"><use href="#i-phone"/></svg>910 000 100 · L–V de 9:00 a 21:00</div>
+        <div><svg class="ico"><use href="#i-wa"/></svg>WhatsApp 24/7 con nuestro asistente de citas</div>
+      </div>
+    </div>
+    <div class="formcard" id="cita2"><div id="form2"></div></div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="in"><span><b>DentistaExample</b> · Implantología avanzada en Madrid · 2026</span><span>Página de demostración: marca, precios y opiniones ficticios.</span></div>
+</footer>
+
+<nav class="mbar" aria-label="Contacto rápido">
+  <a href="#cita2"><svg width="20" height="20"><use href="#i-phone"/></svg>Llámame</a>
+  <button type="button" class="wa" data-chat><svg width="20" height="20"><use href="#i-wa"/></svg>WhatsApp</button>
+  <a class="ct" href="#cita"><svg width="20" height="20"><use href="#i-cal"/></svg>Cita gratis</a>
+</nav>
+
+<button class="fab" type="button" id="fab" aria-label="Abrir chat de WhatsApp"><svg width="30" height="30"><use href="#i-wa"/></svg><span class="bdg" id="bdg">1</span></button>
+
+<div class="chatbox" id="chat" role="dialog" aria-label="Chat de WhatsApp con DentistaExample" hidden>
+  <div class="ch">
+    <button class="back" type="button" id="close" aria-label="Cerrar chat"><svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20z"/></svg></button>
+    <div class="av"><svg width="22" height="22"><use href="#i-tooth"/></svg></div>
+    <div class="nm"><b><span>DentistaExample</span><svg width="16" height="16" viewBox="0 0 24 24" aria-label="Cuenta verificada"><path fill="#25D366" d="M12 1l2.6 2 3.2-.3 1.3 3 3 1.3-.3 3.2 2 2.6-2 2.6.3 3.2-3 1.3-1.3 3-3.2-.3L12 23l-2.6-2-3.2.3-1.3-3-3-1.3.3-3.2L0 12l2-2.6-.3-3.2 3-1.3 1.3-3 3.2.3z"/><path d="m7.5 12.3 3 3 6-6.2" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></b><small id="st">en línea</small></div>
+    <div class="acts" aria-hidden="true">
+      <span><svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M15 8v8H5V8zm1-2H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4V7a1 1 0 0 0-1-1z"/></svg></span>
+      <span><svg width="20" height="20"><use href="#i-phone"/></svg></span>
+      <span><svg width="20" height="20" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="19" r="2" fill="currentColor"/></svg></span>
+    </div>
+  </div>
+  <div class="wall" id="msgs" aria-live="polite"></div>
+  <form class="comp" id="comp">
+    <div class="field">
+      <span aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="10" r="1.2" fill="currentColor"/><circle cx="15" cy="10" r="1.2" fill="currentColor"/><path d="M8 14.5c1 1.6 2.4 2.4 4 2.4s3-.8 4-2.4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      <input id="txt" autocomplete="off" placeholder="Mensaje" aria-label="Mensaje">
+      <span aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24"><path d="M16.5 6.5 8.4 14.6a2 2 0 0 0 2.8 2.8l8.1-8.1a4 4 0 0 0-5.6-5.7L5.5 11.8a6 6 0 0 0 8.5 8.5L20 14.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+      <span aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm8-3h-3.2l-1.8-2H9L7.2 6H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2zm0 13H4V8h4.1l1.8-2h4.2l1.8 2H20z"/></svg></span>
+    </div>
+    <button class="send" type="submit" id="sendbtn" aria-label="Enviar"></button>
+  </form>
+</div>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const closeModal = () => {}, closeMenus = () => {};
+
+  /* Formularios de captación */
+  function formHTML(p){
+    return `<span class="fc-tag"><svg width="14" height="14"><use href="#i-gift"/></svg>Consulta gratuita</span>
+    <h2>¡Pide tu cita!</h2>
+    <p class="lead">Te llamamos en menos de 15 minutos en horario de clínica.</p>
+    <form novalidate>
+      <div class="fields">
+        <div class="f"><label for="${p}-n">Nombre</label><input id="${p}-n" name="n" placeholder="Tu nombre" autocomplete="name"></div>
+        <div class="f"><label for="${p}-t">Teléfono</label><input id="${p}-t" name="t" type="tel" placeholder="600 000 000" autocomplete="tel"></div>
+        <div class="f"><label for="${p}-s">Clínica más cercana</label><select id="${p}-s" name="s"><option>Moratalaz</option><option>Vallecas</option></select></div>
+        <label class="chk"><input type="checkbox" id="${p}-c" name="c"><span>Acepto la <a href="#cita">política de privacidad</a> y que me llamen para darme cita.</span></label>
+        <button class="btn btn-sun" type="submit"><svg class="ico"><use href="#i-cal"/></svg>Quiero mi cita gratis</button>
+      </div>
+      <p class="err" aria-live="polite"></p>
+    </form>
+    <div class="or">o si lo prefieres</div>
+    <button class="btn btn-wa" type="button" data-chat style="width:100%"><svg class="ico"><use href="#i-wa"/></svg>Elige tú la hora por WhatsApp</button>`;
+  }
+  function mount(host, p){
+    host.innerHTML = formHTML(p);
+    host.querySelector('[data-chat]').addEventListener('click', () => openChat());
+    const f = host.querySelector('form');
+    f.addEventListener('submit', e => {
+      e.preventDefault();
+      const err = f.querySelector('.err'); const v = n => f.elements[n].value.trim();
+      if (!v('n')) return err.textContent = 'Escribe tu nombre para saber a quién llamar.';
+      if (v('t').replace(/\D/g,'').length < 9) return err.textContent = 'Escribe un teléfono de 9 cifras.';
+      if (!f.elements.c.checked) return err.textContent = 'Acepta la política de privacidad para continuar.';
+      const name = esc(v('n').split(' ')[0]);
+      host.innerHTML = `<div class="ok"><span class="tick"><svg width="32" height="32"><use href="#i-check"/></svg></span>
+        <h2>¡Gracias, ${name}!</h2><p>Hemos recibido tu solicitud para la clínica de ${esc(v('s'))}. Una persona del equipo te llama en breve para darte cita.</p>
+        <span class="timer">Te llamamos en menos de 15 min</span>
+        <button class="btn btn-line" type="button" style="color:var(--aqua-d)">Volver al formulario</button></div>`;
+      host.querySelector('button').addEventListener('click', () => mount(host, p));
+    });
+  }
+  mount($('form1'), 'a'); mount($('form2'), 'b');
+
+  /* Chat de WhatsApp */
+  const chat = $('chat'), msgs = $('msgs'), txt = $('txt'), sendbtn = $('sendbtn');
+  const SEDES = { a: 'Moratalaz', v: 'Vallecas' };
+  const TRAT = [['Valoración dientes fijos','Gratis · escáner 3D · 45 min'], ['Valoración de implantes','Gratis · 30 min'], ['Segunda opinión','Trae tu presupuesto · gratis'], ['Revisión general','Gratis · 20 min'], ['Urgencia','Te atendemos hoy']];
+  const DIAS = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const HORAS = ['10:00','10:30','11:00','11:30','12:00','12:30','13:00','16:00','16:30','17:00','17:30','18:00','18:30','19:00','19:30','20:00'];
+  const MIC = '<svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12z"/></svg>';
+  const SEND = '<svg width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M3 20.5v-6.2L11 12 3 9.7V3.5L22 12z"/></svg>';
+  const TICKS = '<svg width="16" height="11" viewBox="0 0 16 11" aria-label="Leído"><path fill="#53BDEB" d="M11.07.65 10.4.13a.37.37 0 0 0-.52.06L4.13 7.61 1.9 5.52a.36.36 0 0 0-.5.02l-.5.53a.36.36 0 0 0 .02.51L3.9 9.4a.5.5 0 0 0 .73-.06l6.5-8.2a.37.37 0 0 0-.06-.5zm3.9 0-.67-.52a.37.37 0 0 0-.52.06L8.03 7.6l-.8-.75-.98 1.25 1.37 1.29a.5.5 0 0 0 .73-.06l6.68-8.48a.37.37 0 0 0-.06-.51z"/></svg>';
+  const REPLY = '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"/></svg>';
+  const LISTI = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h2v2H3zm4 0h14v2H7zM3 11h2v2H3zm4 0h14v2H7zm-4 5h2v2H3zm4 0h14v2H7z"/></svg>';
+  let st = {}, step = 'menu', busy = false, started = false, days = [], last = '', sheetEl = null;
+  (function(){ const d = new Date(); d.setHours(0,0,0,0); while (days.length < 6){ d.setDate(d.getDate()+1); if (d.getDay() && d.getDay() !== 6) days.push(new Date(d)); } })();
+  const now = () => new Date().toTimeString().slice(0,5);
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  const fmt = d => `${DIAS[d.getDay()]} ${d.getDate()}`;
+  const scroll = () => { msgs.scrollTop = msgs.scrollHeight; };
+  sendbtn.innerHTML = MIC;
+  txt.addEventListener('input', () => { sendbtn.innerHTML = txt.value.trim() ? SEND : MIC; });
+
+  function add(html, who){
+    const m = document.createElement('div'); m.className = 'm ' + who + (last !== who ? ' first' : ''); last = who;
+    m.innerHTML = `<div class="bub">${html}<span class="meta">${now()}${who === 'o' ? TICKS : ''}</span></div>`;
+    msgs.appendChild(m); scroll(); return m;
+  }
+  function lockAll(){ msgs.querySelectorAll('.wbtn').forEach(b => b.disabled = true); }
+  function closeSheet(){ if (sheetEl){ sheetEl.remove(); sheetEl = null; } }
+  function choose(label, fn){ if (busy) return; lockAll(); closeSheet(); add(esc(label), 'o'); fn(); }
+  function buttons(m, opts){
+    m.classList.add('has-btns'); const w = document.createElement('div'); w.className = 'wbtns';
+    opts.forEach(([l, fn]) => { const b = document.createElement('button'); b.type = 'button'; b.className = 'wbtn'; b.innerHTML = REPLY + '<span>' + esc(l) + '</span>'; b.onclick = () => choose(l, fn); w.appendChild(b); });
+    m.appendChild(w);
+  }
+  function listBtn(m, opts, cfg){
+    m.classList.add('has-btns'); const w = document.createElement('div'); w.className = 'wbtns';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 'wbtn'; b.innerHTML = LISTI + '<span>' + esc(cfg.btn) + '</span>';
+    b.onclick = () => { if (!b.disabled) openSheet(opts, cfg); }; w.appendChild(b); m.appendChild(w);
+  }
+  function openSheet(opts, cfg){
+    closeSheet();
+    const s = document.createElement('div'); s.className = 'sheet';
+    s.innerHTML = `<div class="pan" role="dialog" aria-label="${esc(cfg.title)}"><header><button type="button" class="sx" aria-label="Cerrar">×</button><span>${esc(cfg.title)}</span></header>
+      <div class="opts">${opts.map((o, i) => `<label><span>${esc(o[0])}${o[2] ? `<small>${esc(o[2])}</small>` : ''}</span><input type="radio" name="wopt" value="${i}"></label>`).join('')}</div>
+      <button type="button" class="send2" disabled>Enviar</button></div>`;
+    chat.appendChild(s); sheetEl = s;
+    const sb = s.querySelector('.send2');
+    s.querySelectorAll('input').forEach(r => r.addEventListener('change', () => { sb.disabled = false; }));
+    s.querySelector('.sx').onclick = closeSheet;
+    s.addEventListener('click', e => { if (e.target === s) closeSheet(); });
+    sb.onclick = () => { const c = s.querySelector('input:checked'); if (c){ const o = opts[+c.value]; choose(o[0], o[1]); } };
+  }
+  async function bot(html, opts, ms = 900, cfg){
+    busy = true; $('st').textContent = 'escribiendo…';
+    const t = document.createElement('div'); t.className = 'typing'; t.innerHTML = '<i></i><i></i><i></i>';
+    msgs.appendChild(t); scroll();
+    await wait(ms); t.remove(); const m = add(html, 'i'); $('st').textContent = 'en línea'; busy = false;
+    if (opts){ cfg ? listBtn(m, opts, cfg) : buttons(m, opts); scroll(); }
+  }
+  const menu = () => [['Pedir cita', askT], ['Horarios y clínicas', info], ['Precios', precios]];
+  function hello(){
+    step = 'menu';
+    msgs.innerHTML = '<span class="day">Hoy</span><div class="sys">🔒 Esta clínica usa un asistente automático para gestionar las citas. No compartas información médica por aquí.</div>';
+    last = '';
+    bot('¡Hola! 👋 Soy <strong>Ana</strong>, la asistente de DentistaExample.\nTe ayudo a pedir, cambiar o cancelar tu cita en Moratalaz o Vallecas.\n\n¿Qué quieres hacer?', st.sede ? null : menu(), 700)
+      .then(() => { if (st.sede) askT(); });
+  }
+  function info(){ bot('📍 <strong>Moratalaz</strong>\nC/ del Pinar de Moratalaz, 23 · Metro Vinateros\n\n📍 <strong>Vallecas</strong>\nAv. del Parque Sur, 41 · Metro Sierra de Guadalupe\n\n🕐 L–V de 10:00 a 14:00 y de 16:00 a 21:00', [['Pedir cita', askT]]); }
+  function precios(){ bot('💬 La <strong>primera consulta es gratis</strong>.\n\n• Arcada completa fija: desde 5.900 €\n• Financiado: desde 99 €/mes\n• Valoración y escáner 3D: gratis\n\nEn la primera visita te damos un presupuesto cerrado.', [['Pedir cita', askT]]); }
+  function askT(){ step = 't'; bot('¿Qué tipo de cita necesitas?', TRAT.map(([t, d]) => [t, () => { st.t = t; st.sede ? slots(0) : askS(); }, d]), 800, { btn: 'Ver tratamientos', title: 'Tratamientos' }); }
+  function askS(){ step = 's'; bot(`<strong>${st.t}</strong>, apuntado ✍️\n¿En qué clínica te viene mejor?`, [['Moratalaz', () => { st.sede = 'a'; slots(0); }], ['Vallecas', () => { st.sede = 'v'; slots(0); }]]); }
+  function slots(from){
+    step = 'slot';
+    const seed = st.sede === 'a' ? 3 : 7, out = [];
+    for (let di = from; di < days.length && out.length < 4; di++){
+      [HORAS[(di * seed + 2) % HORAS.length], HORAS[(di * seed + 9) % HORAS.length]].sort().forEach(h => out.length < 4 && out.push({ di, h }));
+    }
+    const opts = out.map(s => [`${fmt(days[s.di])} · ${s.h}`, () => { st.slot = s; askN(); }, `Clínica ${SEDES[st.sede]}`]);
+    const next = (out[out.length-1]?.di ?? from) + 1;
+    if (next < days.length) opts.push(['Ver otros días', () => slots(next), 'Más fechas disponibles']);
+    bot(`He mirado la agenda de <strong>${SEDES[st.sede]}</strong> 🗓\nEstos son los primeros huecos libres:`, opts, 1300, { btn: 'Ver horarios', title: 'Horarios disponibles' });
+  }
+  function askN(){ step = 'n'; bot('¡Perfecto! ¿A nombre de quién pongo la cita?\n<small>Escribe nombre y apellido.</small>'); txt.placeholder = 'Ej.: Laura García'; setTimeout(() => txt.focus(), 950); }
+  function confirmar(){
+    step = 'c'; const d = days[st.slot.di];
+    bot(`Revisa los datos de tu cita:\n\n🦷 <strong>${st.t}</strong>\n📍 Clínica ${SEDES[st.sede]}\n🗓 ${fmt(d)} de ${MESES[d.getMonth()]}\n🕐 ${st.slot.h}\n👤 ${esc(st.n)}`,
+      [['Confirmar cita', done], ['Cambiar hora', () => slots(st.slot.di)]], 600);
+  }
+  function done(){ step = 'done'; bot('✅ <strong>¡Cita confirmada!</strong>\n\nTe enviaré un recordatorio el día anterior para que confirmes o cambies la cita con un toque.\n\n¡Hasta pronto! 😊', [['Pedir otra cita', () => { st = {}; askT(); }]], 1100); }
+
+  function openChat(sede){
+    chat.hidden = false; $('bdg').hidden = true;
+    if (sede) st.sede = sede;
+    if (!started){ started = true; hello(); }
+    else if (sede && !busy && (step === 'menu' || step === 'done')){ lockAll(); add(`Quiero cita en ${SEDES[sede]}`, 'o'); askT(); }
+    setTimeout(() => txt.focus({ preventScroll: true }), 50);
+  }
+  document.querySelectorAll('[data-chat]').forEach(b => b.addEventListener('click', () => openChat(b.dataset.sede)));
+  $('fab').addEventListener('click', () => chat.hidden ? openChat() : (chat.hidden = true));
+  $('close').addEventListener('click', () => { closeSheet(); chat.hidden = true; });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape'){ if (sheetEl) return closeSheet(); chat.hidden = true; closeModal(); closeMenus(); } });
+  $('comp').addEventListener('submit', e => {
+    e.preventDefault();
+    const t = txt.value.trim(); if (!t || busy) return;
+    txt.value = ''; sendbtn.innerHTML = MIC; lockAll(); closeSheet(); add(esc(t), 'o');
+    const l = t.toLowerCase();
+    if (step === 'n'){ st.n = t.slice(0, 40); txt.placeholder = 'Mensaje'; return confirmar(); }
+    if (/cita|reserv|hueco|agend|limpieza|revisi/.test(l)) return askT();
+    if (/precio|cuesta|cuánto|cuanto|vale|implante/.test(l)) return precios();
+    if (/hora|cl[ií]nica|sede|dónde|donde|direcc|llegar/.test(l)) return info();
+    bot('Puedo ayudarte a pedir cita, darte horarios o precios. ¿Qué prefieres?', menu());
+  });
+
+})();
+</script>
+
+</body></html>
